@@ -1,0 +1,33 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2016-12-24 05:59:06 --> 404 Page Not Found: Errordocs/403.html
+ERROR - 2016-12-24 06:13:06 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 06:14:17 --> 404 Page Not Found: Main/assets
+ERROR - 2016-12-24 06:14:17 --> 404 Page Not Found: Main/js
+ERROR - 2016-12-24 06:15:57 --> 404 Page Not Found: User/assets
+ERROR - 2016-12-24 06:15:58 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 10:11:19 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-12-24 10:11:20 --> 404 Page Not Found: Apple-touch-iconpng/index
+ERROR - 2016-12-24 12:07:48 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-12-24 12:07:48 --> 404 Page Not Found: Apple-touch-iconpng/index
+ERROR - 2016-12-24 12:20:41 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-12-24 12:20:43 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 12:20:44 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 13:12:10 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-12-24 13:56:46 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-12-24 13:56:47 --> 404 Page Not Found: Apple-touch-iconpng/index
+ERROR - 2016-12-24 15:35:33 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 15:36:32 --> 404 Page Not Found: User/assets
+ERROR - 2016-12-24 15:36:33 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 15:36:44 --> 404 Page Not Found: Main/assets
+ERROR - 2016-12-24 15:36:44 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 15:37:08 --> 404 Page Not Found: Main/assets
+ERROR - 2016-12-24 15:37:08 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 18:11:08 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-12-24 18:30:14 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-12-24 18:30:14 --> 404 Page Not Found: Apple-touch-iconpng/index
+ERROR - 2016-12-24 19:38:17 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-12-24 20:00:00 --> 404 Page Not Found: Main/assets
+ERROR - 2016-12-24 20:00:02 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-12-24 23:00:31 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-12-24 23:00:32 --> 404 Page Not Found: Apple-touch-iconpng/index

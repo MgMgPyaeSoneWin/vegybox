@@ -1,0 +1,36 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2016-11-13 00:02:48 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-13 03:49:08 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-13 08:02:40 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:02:41 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 08:02:47 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:02:47 --> 404 Page Not Found: User/assets
+ERROR - 2016-11-13 08:02:47 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 08:02:49 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:02:50 --> 404 Page Not Found: Order/assets
+ERROR - 2016-11-13 08:02:50 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 08:02:57 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:02:57 --> 404 Page Not Found: Order/assets
+ERROR - 2016-11-13 08:02:57 --> 404 Page Not Found: Order/js
+ERROR - 2016-11-13 08:03:32 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:03:33 --> 404 Page Not Found: Order/assets
+ERROR - 2016-11-13 08:03:33 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 08:03:57 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:03:57 --> 404 Page Not Found: Order/assets
+ERROR - 2016-11-13 08:03:57 --> 404 Page Not Found: Order/js
+ERROR - 2016-11-13 08:38:36 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 08:38:36 --> 404 Page Not Found: User/assets
+ERROR - 2016-11-13 08:38:38 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 09:19:42 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 10:18:05 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-13 11:59:50 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 11:59:51 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 12:00:10 --> 404 Page Not Found: User/assets
+ERROR - 2016-11-13 12:00:10 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-13 12:00:10 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-13 12:52:31 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-13 20:07:25 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-11-13 20:07:26 --> 404 Page Not Found: Apple-touch-iconpng/index
+ERROR - 2016-11-13 20:07:37 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+ERROR - 2016-11-13 20:07:37 --> 404 Page Not Found: Apple-touch-iconpng/index

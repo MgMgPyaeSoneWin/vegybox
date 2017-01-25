@@ -1,0 +1,32 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2016-11-28 00:06:45 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 00:07:37 --> 404 Page Not Found: User/assets
+ERROR - 2016-11-28 00:07:38 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 00:08:07 --> 404 Page Not Found: Main/assets
+ERROR - 2016-11-28 00:08:07 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 03:22:14 --> 404 Page Not Found: Errordocs/403.html
+ERROR - 2016-11-28 08:10:00 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-28 09:05:33 --> 404 Page Not Found: Main/assets
+ERROR - 2016-11-28 09:05:33 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 10:26:04 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-28 10:26:06 --> 404 Page Not Found: User/assets
+ERROR - 2016-11-28 10:26:07 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 10:26:36 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 10:27:05 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-28 10:27:05 --> 404 Page Not Found: Order/assets
+ERROR - 2016-11-28 10:27:07 --> 404 Page Not Found: Order/js
+ERROR - 2016-11-28 11:42:19 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-28 11:42:19 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 11:42:30 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 11:43:02 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-28 11:43:02 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 11:43:12 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 13:40:35 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-28 15:47:57 --> 404 Page Not Found: Assets/fonts
+ERROR - 2016-11-28 15:47:57 --> 404 Page Not Found: User/assets
+ERROR - 2016-11-28 15:47:57 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2016-11-28 15:49:51 --> 404 Page Not Found: Order/assets
+ERROR - 2016-11-28 15:49:51 --> 404 Page Not Found: Order/js
+ERROR - 2016-11-28 19:37:19 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2016-11-28 22:02:03 --> 404 Page Not Found: Js/placeholder.js
