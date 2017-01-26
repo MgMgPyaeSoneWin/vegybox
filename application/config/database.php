@@ -48,9 +48,9 @@
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['default']['hostname'] = 'vegyboxAdmin.db.10753838.hostedresource.com';
-$db['default']['username'] = 'vegyboxAdmin';
-$db['default']['password'] = 'Admin123!@#';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'root';
 $db['default']['database'] = 'vegyboxAdmin';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

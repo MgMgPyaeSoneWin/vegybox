@@ -93,6 +93,26 @@
 	                <li id="nav_profile"><a href="<?php echo base_url() ?>user/profile">Profile</a></li>
                     <li id="nav_about"><a href="<?php echo base_url() ?>user/log_out">Log Out</a></li>
                  <?php endif; ?>
+
+				<!--Jan 26: 6:02 AM
+					@Author Pyae Sone
+					Languge Dropdown-->
+				<li id="nav_">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Another action</a></li>
+						</ul>
+					</div>
+				</li>
+				<!--Jan 26: 6:02 AM
+					@Author Pyae Sone
+					Languge Dropdown-->
             </ul>
             <script type="text/javascript">	
 				
