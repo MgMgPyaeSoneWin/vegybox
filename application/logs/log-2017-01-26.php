@@ -924,3 +924,116 @@ ERROR - 2017-01-26 22:31:05 --> 404 Page Not Found: Assets/fonts
 ERROR - 2017-01-26 22:31:05 --> 404 Page Not Found: Js/placeholder.js
 ERROR - 2017-01-26 22:31:05 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
 ERROR - 2017-01-26 22:31:05 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 22:42:32 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 22:42:32 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 22:42:32 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 22:42:32 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 22:42:33 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 22:49:06 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 22:49:06 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:14:21 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:14:21 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:14:22 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:14:22 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:14:22 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:14:22 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:14:22 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:14:22 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:15:23 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:15:23 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:15:23 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:15:23 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:15:23 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:15:23 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:15:23 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:15:23 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:16:06 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:16:06 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:16:06 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:16:06 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:16:06 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:06 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:06 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:06 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:19:07 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:19:07 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:07 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:07 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:07 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:33 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:33 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:33 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:19:34 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:19:34 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:34 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:34 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:34 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:37 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:37 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:37 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:19:37 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:19:37 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:37 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:37 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:37 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:46 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:46 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:46 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:19:46 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:19:46 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:46 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:19:46 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:19:46 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:12 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:12 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:23:12 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:23:12 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:12 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:15 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:15 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:23:15 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:23:15 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:15 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:20 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:20 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:23:20 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:23:20 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:20 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:24 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:24 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:24 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:23:24 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:23:24 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:24 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:23:24 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:23:24 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:22 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:22 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:22 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:27:23 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:27:23 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:23 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:23 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:23 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:26 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:26 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:27 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:27:27 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:27:27 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:27 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:27 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:27 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:30 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:30 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:31 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-01-26 23:27:31 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-01-26 23:27:31 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:31 --> Could not find the language line "welcome_message"
+ERROR - 2017-01-26 23:27:31 --> Query error: Table 'vegyboxadmin.fr_box' doesn't exist - Invalid query: SELECT * FROM fr_box WHERE status = 'enabled' 
+ERROR - 2017-01-26 23:27:31 --> Could not find the language line "welcome_message"

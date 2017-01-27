@@ -25,8 +25,8 @@
           </div>         
           <div class="hero">
             <hgroup>
-                <h1>Our app is now mobile !</h1>  
-                <h3 class="visible-md visible-lg">Download our free mobile app to place your order from anywhere at anytime.  </h3>
+                <h1><?php echo $this->lang->line('app_mobile'); ?></h1>
+                <h3 class="visible-md visible-lg"><?php echo $this->lang->line('download_app');?></h3>
             </hgroup>
            <!--a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" >Download Now</a-->
 		   <a href="<?php echo base_url() ?>assets/frescovegybox.cordova.android.201605250714.apk" download="FrescoVegyBox.apk" target="_blank" class="btn btn-hero btn-lg" >Download Now</a>
@@ -127,7 +127,7 @@
         </div>
     </div>
 </div>
-
+<?php echo $this->lang->line('download'); ?>
 <?php include('common/footer.php'); ?>
 
 <style>

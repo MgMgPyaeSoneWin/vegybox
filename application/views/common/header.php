@@ -73,7 +73,7 @@
         <nav id="menu">
         
         	<ul id="menu-nav">
-            	<li id="nav_home"><a href="<?php echo base_url() ?>main">Home</a></li>
+            	<li id="nav_home"><a href="<?php echo base_url() ?>main"><?php echo $this->lang->line('home'); ?></a></li>
                  <?php if(!$this->session->userdata('userdata')): ?>
 					<li id="nav_login"><a href="<?php echo base_url() ?>user">Login</a></li>
                  <?php endif; ?>
@@ -97,19 +97,12 @@
 				<!--Jan 26: 6:02 AM
 					@Author Pyae Sone
 					Languge Dropdown-->
-				<li id="nav_">
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Dropdown
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Another action</a></li>
-						</ul>
-					</div>
-				</li>
+				<select onchange="javascript:window.location.href='<?php echo base_url(); ?>LanguageSwitcher/switchLang/'+this.value;">
+					<option value="english" <?php if($this->session->userdata('site_lang') == 'english') echo 'selected="selected"'; ?>>English</option>
+					<option value="unicode" <?php if($this->session->userdata('site_lang') == 'unicode') echo 'selected="selected"'; ?>>unicode</option>
+					<option value="zawgyi" <?php if($this->session->userdata('site_lang') == 'zawgyi') echo 'selected="selected"'; ?>>zawgyi</option>
+				</select>
+				<p><?php echo $this->lang->line('welcome_message'); ?></p>
 				<!--Jan 26: 6:02 AM
 					@Author Pyae Sone
 					Languge Dropdown-->
