@@ -107,14 +107,13 @@ class System extends CI_Controller
 		if($id != '')
 		{
 			$data['faq'] = $this->system_model->get_faq_details($id);
-			
 		}
 		else
 		{
 			$data['faq'] = false;
 		}
 		
-		$this->load->view('admin/faq_entry_view.php',$data);
+		$this->load->view('admin/faq_entry_view_myanmar.php',$data);
 	}
 	
 	function insert_faq()
@@ -137,7 +136,28 @@ class System extends CI_Controller
 		}
 		
 	}
-	
+
+    function insert_faq_lang()
+    {
+        $data['id'] = $this->input->post('hidID');
+        $data['question'] = $this->input->post('txtquestion');
+        $data['answer'] = $this->input->post('txtanswer');
+        $data['status'] = $this->input->post('cbostatus');
+        $data['cbolang'] = $this->input->post('cbolang');
+
+        $result = $this->system_model->insert_faq($data);
+        if($result == false)
+        {
+            $this->session->set_flashdata('error_msg', '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b> Sorry, there is some internal server occur when processing your request. Please refresh the page and try again. Sorry for your inconvinence. </b></div>');
+            redirect(base_url().'admin/system/faq_entry/'.$data['id']);
+        }
+        else
+        {
+            $this->session->set_flashdata('error_msg', '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-ok"></i> You have successfully '.($data['id'] !== '' ? 'edited a' : 'added a new') .'  FAQ ! </b></div>');
+            redirect(base_url().'admin/system/faq_list');
+        }
+
+    }
 	function delete_faq($id)
 	{
 		$result = $this->system_model->delete_faq($id);

@@ -25,10 +25,13 @@ class User extends CI_Controller
 
 		if($this->form_validation->run()!== FALSE)
 		{
+		    // User is valid or not
 			$check	  = $this->user_model->check_user($this->input->post('txtemail'),$this->input->post('txtpassword'),$tablename);
-			
+
+            // User is valid
 			if($check !== FALSE)
-			{		
+			{
+			    // User is actived or not
 				$activation = $this->user_model->check_activation($this->input->post('txtemail'));
 		
 				if($activation == false)
@@ -38,6 +41,7 @@ class User extends CI_Controller
 				}
 				else
 				{
+                    // User is actived and checking status
 					if($check->status == 'Banned')
 					{
 						echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Sorry! Your account has been banned by the administrator ! </b></div> '));
