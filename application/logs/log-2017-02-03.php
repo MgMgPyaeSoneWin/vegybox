@@ -459,3 +459,84 @@ ERROR - 2017-02-03 13:17:15 --> Query error: Table 'vegyboxadmin.fr_delivery_day
 ERROR - 2017-02-03 13:17:15 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
 ERROR - 2017-02-03 13:17:21 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
 ERROR - 2017-02-03 13:17:21 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:44:42 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:44:42 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:44:42 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:44:42 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:44:47 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:44:47 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:44:47 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:44:47 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:44:51 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:44:51 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:44:51 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:44:51 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:45:20 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:45:20 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 13:45:21 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-03 13:45:21 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-03 20:07:20 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:07:24 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:07:30 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:07:36 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:07:42 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:07:48 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:07:54 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:00 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:06 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:12 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:18 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:24 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:30 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:36 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:42 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:48 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:08:54 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:00 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:06 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:12 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:19 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:24 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:30 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:36 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:42 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:48 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:09:54 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:00 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:06 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:12 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:18 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:24 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:31 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:36 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:42 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:10:49 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:35:29 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:35:35 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:35:41 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:35:47 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:35:53 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:35:59 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:05 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:11 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:17 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:23 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:29 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:35 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:41 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:47 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:53 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:36:59 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:05 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:11 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:17 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:23 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:29 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:35 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:41 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:47 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:53 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:37:59 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 20:38:05 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 22:38:07 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-03 23:38:08 --> Severity: error --> Exception: Call to undefined function mysql_connect() /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136

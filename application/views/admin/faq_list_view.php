@@ -3,9 +3,15 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header"> FAQs
+            <h1 class="page-header"> FAQs    
             <a href="<?php echo base_url() ?>admin/system/faq_entry" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add New</a>
             </h1>
+            <select class="pull-right" onchange="javascript:window.location.href='<?php echo base_url(); ?>LanguageSwitcher/switchLang/'+this.value;">
+					<option value="english" <?php if($this->session->userdata('site_lang') == 'english') echo 'selected="selected"'; ?>>English</option>
+					<option value="unicode" <?php if($this->session->userdata('site_lang') == 'unicode') echo 'selected="selected"'; ?>>unicode</option>
+					<option value="zawgyi" <?php if($this->session->userdata('site_lang') == 'zawgyi') echo 'selected="selected"'; ?>>zawgyi</option>
+			</select>
+            
         </div>
         <hr>
     </div>

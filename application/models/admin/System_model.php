@@ -107,7 +107,8 @@ class System_model extends CI_Model
 		$box_data = array(
 			  'question'	=> $data['question'],
 			  'answer'     => $data['answer'], 
-			  'status' => $data['status']
+			  'status' => $data['status'],
+              'language_type' => $data['cbolang']
 		);
 		
 		if($data['id'] !== '')

@@ -26,7 +26,7 @@
 					echo $this->session->flashdata('error_msg');
 				}
 			?>
-         	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="<?php echo base_url() ?>admin/system/insert_faq">
+         	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="<?php echo base_url() ?>admin/system/insert_faq_lang">
               <input type="hidden" name="hidID" id="hidID" value="<?php echo ($faq !== false ? $faq->faq_id : '') ?>">
               <div class="form-group">
                 <label for="inputEmail3" class="col-xs-12 col-sm-2 control-label">Question</label>
@@ -56,9 +56,9 @@
                     <label for="inputPassword3" class="col-xs-12 col-sm-2 control-label">Input Type</label>
                     <div class="col-xs-12 col-sm-8">
                         <select name="cbolang" id="cbolang" class="input-sm" >
-                            <option value="enabled" >English</option>
-                            <option value="enabled" >Unicode</option>
-                            <option value="disabled" >Zawgyi</option>
+                            <option value="english" >English</option>
+                            <option value="unicode" >Unicode</option>
+                            <option value="zawgyi" >Zawgyi</option>
                         </select>
                     </div>
                 </div>
