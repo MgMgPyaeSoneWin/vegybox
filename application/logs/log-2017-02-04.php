@@ -267,3 +267,93 @@ ERROR - 2017-02-04 05:45:54 --> Query error: Table 'vegyboxadmin.fr_delivery_day
 ERROR - 2017-02-04 05:45:54 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
 ERROR - 2017-02-04 05:45:54 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
 ERROR - 2017-02-04 05:45:54 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-04 21:24:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:15 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-04 21:24:16 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:16 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-04 21:24:16 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:20 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-04 21:24:20 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-04 21:24:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:25 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:25 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-04 21:24:25 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-04 21:24:25 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:24:25 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:25:30 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:25:30 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-04 21:25:30 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-04 21:25:30 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:25:30 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-04 21:25:44 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-04 21:25:44 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-04 21:25:44 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-04 21:25:44 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-04 21:34:53 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-04 21:34:53 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-04 21:34:53 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-04 21:34:53 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-04 21:34:56 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT SQL_CALC_FOUND_ROWS o.order_id,o.order_ref,DATE_FORMAT(o.order_date,'%d-%m-%Y') as `order_date`,u.name,u.user_id,o.order_status,o.week_status,o.week_num,
+					(SELECT GROUP_CONCAT(CONCAT(b.name,' x ',d.qty) SEPARATOR ',')
+					FROM `fr_order_details` AS d 
+					INNER JOIN `fr_box` AS b ON b.box_id = d.box_id
+					WHERE d.order_id = o.order_id
+					GROUP BY d.order_id ) AS `Type`,
+					(SELECT `name` FROM `fr_delivery_day` WHERE day_id = ts.day_id) AS `Day`,
+					o.subscription,(SELECT t.name FROM `fr_township` AS t WHERE township_id = ts.township_id) AS `township`,
+					(SELECT GROUP_CONCAT(CONCAT(adi.name,' x ',ad.item_qty) SEPARATOR ',')
+					FROM `fr_additional_order` AS ad
+					INNER JOIN `fr_additional_items` AS adi ON adi.item_id = ad.item_id
+					WHERE ad.order_id = o.order_id
+					GROUP BY ad.order_id ) AS `additional`
+					FROM `fr_order` AS o
+					INNER JOIN `fr_user` AS u ON u.user_id = o.user_id
+					INNER JOIN `fr_delivery_info` AS l ON l.order_id = o.order_id
+					INNER JOIN `fr_addresses` AS a ON a.address_id = l.address_id
+					INNER JOIN `fr_township_detail` AS ts ON ts.tspdetail_id = a.township_id ORDER BY o.order_date DESC LIMIT 10
+ERROR - 2017-02-04 21:34:56 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Order_model.php 45
+ERROR - 2017-02-04 21:34:56 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT SQL_CALC_FOUND_ROWS o.order_id,o.order_ref,DATE_FORMAT(o.order_date,'%d-%m-%Y') as `order_date`,u.name,u.user_id,o.order_status,o.week_status,o.week_num,
+					(SELECT GROUP_CONCAT(CONCAT(b.name,' x ',d.qty) SEPARATOR ',')
+					FROM `fr_order_details` AS d 
+					INNER JOIN `fr_box` AS b ON b.box_id = d.box_id
+					WHERE d.order_id = o.order_id
+					GROUP BY d.order_id ) AS `Type`,
+					(SELECT `name` FROM `fr_delivery_day` WHERE day_id = ts.day_id) AS `Day`,
+					o.subscription,(SELECT t.name FROM `fr_township` AS t WHERE township_id = ts.township_id) AS `township`,
+					(SELECT GROUP_CONCAT(CONCAT(adi.name,' x ',ad.item_qty) SEPARATOR ',')
+					FROM `fr_additional_order` AS ad
+					INNER JOIN `fr_additional_items` AS adi ON adi.item_id = ad.item_id
+					WHERE ad.order_id = o.order_id
+					GROUP BY ad.order_id ) AS `additional`
+					FROM `fr_order` AS o
+					INNER JOIN `fr_user` AS u ON u.user_id = o.user_id
+					INNER JOIN `fr_delivery_info` AS l ON l.order_id = o.order_id
+					INNER JOIN `fr_addresses` AS a ON a.address_id = l.address_id
+					INNER JOIN `fr_township_detail` AS ts ON ts.tspdetail_id = a.township_id ORDER BY o.order_date DESC LIMIT 10
+ERROR - 2017-02-04 21:34:56 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Order_model.php 45
+ERROR - 2017-02-04 21:38:21 --> 404 Page Not Found: admin/Product/edit_box_view
+ERROR - 2017-02-04 21:38:21 --> 404 Page Not Found: admin/Product/edit_box_view
+ERROR - 2017-02-04 22:24:19 --> Severity: Warning --> Missing argument 4 for System_model::get_faq_list(), called in /Applications/MAMP/htdocs/vegybox/application/controllers/admin/System.php on line 77 and defined /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 63
+ERROR - 2017-02-04 22:24:19 --> Severity: Warning --> Missing argument 4 for System_model::get_faq_list(), called in /Applications/MAMP/htdocs/vegybox/application/controllers/admin/System.php on line 77 and defined /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 63
+ERROR - 2017-02-04 22:26:23 --> Severity: Compile Error --> 'goto' to undefined label 'again' /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 81
+ERROR - 2017-02-04 22:26:23 --> Severity: Compile Error --> 'goto' to undefined label 'again' /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 81
+ERROR - 2017-02-04 22:26:26 --> Severity: Compile Error --> 'goto' to undefined label 'again' /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 81
+ERROR - 2017-02-04 22:26:26 --> Severity: Compile Error --> 'goto' to undefined label 'again' /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 81
+ERROR - 2017-02-04 22:31:45 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type= LIMIT 0,10
+ERROR - 2017-02-04 22:31:45 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:31:45 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type= LIMIT 0,10
+ERROR - 2017-02-04 22:31:45 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:35:53 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type='english'0,10
+ERROR - 2017-02-04 22:35:53 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:35:53 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type='english'0,10
+ERROR - 2017-02-04 22:35:53 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:36:08 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type='english'0,10
+ERROR - 2017-02-04 22:36:08 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:36:08 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type='english'0,10
+ERROR - 2017-02-04 22:36:08 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:36:14 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type='english'0,10
+ERROR - 2017-02-04 22:36:14 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109
+ERROR - 2017-02-04 22:36:14 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0,10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq WHERE language_type='english'0,10
+ERROR - 2017-02-04 22:36:14 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 109

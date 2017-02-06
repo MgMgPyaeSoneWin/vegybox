@@ -13,3 +13,4 @@ $lang['home'] = "UHome";
 $lang['download_app'] = "This is from unicode";
 $lang['app_mobile'] = "(U)Our app is now mobile !";
 $lang['download'] = "အကြံပြုချက်";
+$lang['download_now'] = "U/Download Now";

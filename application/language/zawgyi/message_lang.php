@@ -13,3 +13,4 @@ $lang['home'] = "ZHome";
 $lang['download_app'] = "This is from Zawgyi";
 $lang['app_mobile'] = "(Z)Our app is now mobile !";
 $lang['download'] = "အႀကံျပဳခ်က္";
+$lang['download_now'] = "Z/Download Now";

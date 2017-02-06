@@ -11,8 +11,29 @@ class Main extends CI_Controller
 
 	public function index()
 	{ 
-		$data['boxes'] = $this->order_model->get_boxes();
-		$this->load->view('home', $data);
+		$siteLang = $this->session->userdata('site_lang');
+        if ($siteLang) {
+            if ($siteLang == "english")
+			{
+				$data['boxes'] = $this->order_model->get_boxes();
+				$this->load->view('home', $data);
+			} 
+			else if ($siteLang == "unicode") {
+				$data['boxes'] = $this->order_model->get_boxes_unicode();
+				$this->load->view('home', $data);
+			}
+			else if ($siteLang == "zawgyi") {
+				$data['boxes'] = $this->order_model->get_boxes_zawgyi();
+				$this->load->view('home', $data);
+			}
+			else {
+				var_dump("error");die();
+			}
+        } 
+		else {
+			$data['boxes'] = $this->order_model->get_boxes();
+			$this->load->view('home', $data);
+		}
 	}
 	
 	function check_status()

@@ -72,6 +72,32 @@ class Product_model extends CI_Model
 			return $this->db->insert('fr_box', $box_data);
 		}
 	}
+
+	function insert_box_lang($data)
+	{
+		// Insert box Info
+		$box_data = array(
+			  'name'	=> $data['name'],
+			  'price'     => $data['price'], 
+			  'description'  => $data['description'],
+			  'status' => $data['status'],
+			  'lang' => $data['lang']
+		);
+		
+		if($data['id'] !== '')
+		{ 
+			if(isset($data['img']) )
+				$box_data['image'] = $data['img'];
+				
+			$this->db->where('box_id', $data['id']);
+			return $this->db->update('fr_box', $box_data);
+		}
+		else
+		{
+			$box_data['image'] = $data['img'];
+			return $this->db->insert('fr_box', $box_data);
+		}
+	}
 	
 	function delete_box($box_id)
 	{

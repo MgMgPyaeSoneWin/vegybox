@@ -63,7 +63,37 @@ class System_model extends CI_Model
 	function get_faq_list( $num,  &$offset, &$row_count)
 	{
 		again:
-		$strQuery = "SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT ";
+		$strQuery = "SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT";
+		
+		if($offset != 0)
+			$strQuery .= $offset.",".$num; 
+		else
+			$strQuery .= "0,".$num; 
+		
+		$query = $this->db->query($strQuery);
+
+		$row_count = $this->db->query("SELECT FOUND_ROWS() as Num_Rows;");
+		
+		$row_count = $row_count->row()->Num_Rows;
+		
+		if($query->num_rows() == 0 && $row_count > 0)
+		{
+			$offset = $offset - $num;
+			goto again;
+		}
+		
+		if($query->num_rows > 0)
+		{
+			return $query->result();
+		}
+		else
+			return false;
+	}
+
+	function get_faq_list_lang( $num,  &$offset, &$row_count, $languge)
+	{
+		again:
+		$strQuery = "SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT";
 		
 		if($offset != 0)
 			$strQuery .= $offset.",".$num; 

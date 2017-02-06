@@ -80,7 +80,7 @@ class Product extends CI_Controller
 			//redirect(base_url().'admin/product/box_list');
 		}
 		
-		$this->load->view('admin/edit_box_view.php',$data);
+		$this->load->view('admin/edit_box_view_myanmar.php',$data);
 	}
 	
 	function insert_box()
@@ -90,6 +90,53 @@ class Product extends CI_Controller
 		$data['price'] = $this->input->post('txtprice');
 		$data['description'] = $this->input->post('txtdesc');
 		$data['status'] = $this->input->post('cbostatus');
+		
+		if($_FILES["file"]["name"] != "") 
+		{		
+			// File Upload	
+			$config['upload_path']          = getcwd().'/assets/img/'; 
+			$config['allowed_types']        = 'gif|jpg|png|jpeg';
+			$config['max_size']             = 1000;
+			$config['max_width']            = 1024;
+			$config['max_height']           = 1024;
+	
+			$this->load->library('upload', $config);
+	
+			if ( ! $this->upload->do_upload('file'))
+			{
+				$err = $this->upload->display_errors('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>', '</b></div>');
+				$this->session->set_flashdata('error_msg', $err);
+				redirect(base_url().'admin/product/edit_box/'.$data['id']);
+			}
+			else
+			{
+				$upload = $this->upload->data();
+				$data['img'] = 'img/'.$upload['file_name'];
+			}
+		}
+		
+		$result = $this->product_model->insert_box($data);
+		if($result == false)
+		{
+			$this->session->set_flashdata('error_msg', '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b> Sorry, there is some internal server occur when processing your request. Please refresh the page and try again. Sorry for your inconvinence. </b></div>');
+			redirect(base_url().'admin/product/edit_box/'.$data['id']);
+		}
+		else
+		{
+			$this->session->set_flashdata('error_msg', '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-ok"></i> You have successfully '.($data['id'] !== '' ? 'edited a' : 'added a new') .'  box ! </b></div>');
+			redirect(base_url().'admin/product/box_list');
+		}
+		
+	}
+
+	function insert_box_lang()
+	{ 
+		$data['id'] = $this->input->post('hidID');		
+		$data['name'] = $this->input->post('txtname');
+		$data['price'] = $this->input->post('txtprice');
+		$data['description'] = $this->input->post('txtdesc');
+		$data['status'] = $this->input->post('cbostatus');
+		$data['lang'] = $this->input->post('cbolang');
 		
 		if($_FILES["file"]["name"] != "") 
 		{		

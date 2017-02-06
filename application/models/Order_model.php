@@ -54,7 +54,35 @@ class order_model extends CI_Model
 	function get_boxes()
 	{
 
-		$sql = "SELECT * FROM fr_box WHERE status = 'enabled' ";
+		$sql = "SELECT * FROM fr_box WHERE status = 'enabled' AND language_type = 'english' ";
+		$query = $this->db->query($sql);
+		
+		if($query->num_rows > 0)
+		{
+			return $query->result();
+		}
+		else
+			return false;
+	}
+
+	function get_boxes_unicode()
+	{
+
+		$sql = "SELECT * FROM fr_box WHERE status = 'enabled' AND language_type = 'unicode' ";
+		$query = $this->db->query($sql);
+		
+		if($query->num_rows > 0)
+		{
+			return $query->result();
+		}
+		else
+			return false;
+	}
+
+	function get_boxes_zawgyi()
+	{
+
+		$sql = "SELECT * FROM fr_box WHERE status = 'enabled' AND language_type = 'zawgyi' ";
 		$query = $this->db->query($sql);
 		
 		if($query->num_rows > 0)

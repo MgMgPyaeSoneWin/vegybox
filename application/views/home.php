@@ -29,7 +29,7 @@
                 <h3 class="visible-md visible-lg"><?php echo $this->lang->line('download_app');?></h3>
             </hgroup>
            <!--a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" >Download Now</a-->
-		   <a href="<?php echo base_url() ?>assets/frescovegybox.cordova.android.201605250714.apk" download="FrescoVegyBox.apk" target="_blank" class="btn btn-hero btn-lg" >Download Now</a>
+		   <a href="<?php echo base_url() ?>assets/frescovegybox.cordova.android.201605250714.apk" download="FrescoVegyBox.apk" target="_blank" class="btn btn-hero btn-lg" ><?php echo $this->lang->line('download_now');?></a>
           </div>
         </div>
 		
@@ -40,10 +40,10 @@
           </div>
           <div class="hero">        
             <hgroup>
-                <h3><strong>Tired of wasting time in traffic?</strong></h3>        
+                <h3><strong><?php echo $this->lang->line('tired_of_wasting_time_in_traffic');?></strong></h3>        
                 <!--<h2>Sit back and relax while we do all the work. </h2> <h3 class="visible-md visible-lg"> We have started a Vegy box service to easily get to you the best of our products right infront of your door step.  </h3>-->
             </hgroup>
-            <a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" role="button">Order Vegy Box Now</a>
+            <a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" role="button"><?php echo $this->lang->line('Order_Vegy_Box_Now');?></a>
           </div>
         </div>
 		
@@ -55,9 +55,9 @@
           <div class="hero">        
             <hgroup>
                 <!--<h1>We are smart</h1>  -->      
-                <h3><strong>Are you too busy to keep your new year’s resolution of eating healthier?</strong></h3>
+                <h3><strong><?php echo $this->lang->line('are_you_too_busy');?></strong></h3>
             </hgroup>       
-            <a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" role="button">Order Vegy Box Now</a>
+            <a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" role="button"><?php echo $this->lang->line('Order_Vegy_Box_Now');?></a>
           </div>
         </div>
 		
