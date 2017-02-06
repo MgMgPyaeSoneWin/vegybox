@@ -55,9 +55,9 @@ class Product_model extends CI_Model
 			  'name'	=> $data['name'],
 			  'price'     => $data['price'], 
 			  'description'  => $data['description'],
-			  'status' => $data['status']
+			  'status' => $data['status'],
+			  'language_type' => $data['lang']
 		);
-		
 		if($data['id'] !== '')
 		{ 
 			if(isset($data['img']) )
@@ -73,31 +73,6 @@ class Product_model extends CI_Model
 		}
 	}
 
-	function insert_box_lang($data)
-	{
-		// Insert box Info
-		$box_data = array(
-			  'name'	=> $data['name'],
-			  'price'     => $data['price'], 
-			  'description'  => $data['description'],
-			  'status' => $data['status'],
-			  'lang' => $data['lang']
-		);
-		
-		if($data['id'] !== '')
-		{ 
-			if(isset($data['img']) )
-				$box_data['image'] = $data['img'];
-				
-			$this->db->where('box_id', $data['id']);
-			return $this->db->update('fr_box', $box_data);
-		}
-		else
-		{
-			$box_data['image'] = $data['img'];
-			return $this->db->insert('fr_box', $box_data);
-		}
-	}
 	
 	function delete_box($box_id)
 	{
@@ -170,7 +145,8 @@ FROM fr_additional_items WHERE item_id = '".$id."' OR parent = '".$id."' GROUP B
 				  'description'  => $data['description'],
 				  'net_weight'	=> $sub['weight'][$i],
 				  'price'     => $sub['price'][$i], 
-				  'status'  => $sub['status'][$i]
+				  'status'  => $sub['status'][$i],
+				  'language_type' => $data['lang']
 				);
 			
 				if($data['id'] !== '')
@@ -208,7 +184,8 @@ FROM fr_additional_items WHERE item_id = '".$id."' OR parent = '".$id."' GROUP B
 			  'description'  => $data['description'],
 			  'net_weight'	=> $sub['weight'][0],
 			  'price'     => $sub['price'][0], 
-			  'status'  => $sub['status'][0]
+			  'status'  => $sub['status'][0],
+			  'language_type' => $data['lang']
 			);
 
 			if($data['id'] !== '')

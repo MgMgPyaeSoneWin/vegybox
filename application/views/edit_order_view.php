@@ -12,7 +12,7 @@
                 <ul class="nav nav-tabs" role="tablist">
 
                     <li role="presentation" class="active">
-                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Vege Box Details">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="<?=$this->lang->line('vegeBoxDetails');?>">
                             <span class="round-tab">
                                 <i class="icon-box"></i>
                             </span>
@@ -20,21 +20,21 @@
                     </li>
 
                     <li role="presentation" class="disabled">
-                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Additional Items">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="<?=$this->lang->line('additionalItems');?>">
                             <span class="round-tab">
                                 <i class="icon-list-add"></i>
                             </span>
                         </a>
                     </li>
                      <li role="presentation" class="disabled">
-                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Delivery Details">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="<?=$this->lang->line('deliveryDetails');?>">
                             <span class="round-tab">
                                 <i class="icon-truck"></i>
                             </span>
                         </a>
                     </li>
                     <li role="presentation" class="disabled">
-                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Order Confirmation">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="<?=$this->lang->line('orderConfirmation');?>">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-ok"></i>
                             </span>
@@ -48,9 +48,9 @@
             		<!-- Vegebox Details -->                
                     <div class="tab-pane active" role="tabpanel" id="step1">
                        
-                        <h2 class="heading-green">Vegy Box Details</h2>  
-                       <p> You will need to subscribe at least 4 boxes up to 12 boxes a month because we prepare your boxes weekly for you to have a reliable source of fresh salads and vegetables. Also, without knowing your boxes in advance our farmers have difficulty in planning their crops and cause unnecessary waste.</p>
-                       <p>If you are new subscriber, you can order a single box one time to decide if you want to enjoy our service.</p>
+                        <h2 class="heading-green"><?=$this->lang->line('vegyBoxDetails');?></h2>  
+                       <p><?=$this->lang->line('subscribeAtLeast');?></p>
+                       <p><?=$this->lang->line('subscriber');?></p>
 
                         <hr style="margin:5px 0px;" />
                         

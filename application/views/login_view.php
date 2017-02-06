@@ -2,13 +2,13 @@
 
     <div class="row" style="margin:0 auto;padding:5px;">
         <div style="width:100%;">
-        	<h3 class="heading-red" style="margin-top:5px;">Have an Account? </h3>
-            <h4 class="heading-green" style="margin-top:5px;"> You need to sign in or register for Vegy Box delivery service. <small><a data-toggle="tooltip" data-placement="right" title="We need this information so that receive a confirmation that your order has been received and that it will be processed and delivered as per your instruction. Rest assured your information will not be sold, traded, or given to anyone. "> <i class="glyphicon glyphicon-question-sign"></i> </a></small></h4>
+        	<h3 class="heading-red" style="margin-top:5px;"><?=$this->lang->line('HaveanAccount');?></h3>
+            <h4 class="heading-green" style="margin-top:5px;"><?=$this->lang->line('needToSign');?><small><a data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('needInfo');?>"> <i class="glyphicon glyphicon-question-sign"></i> </a></small></h4>
             
             <div class="well">
                 <ul id="myTab" class="nav nav-tabs">
-                  <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-                  <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+                  <li class="active"><a href="#signin" data-toggle="tab"><?=$this->lang->line('signIn');?></a></li>
+                  <li class=""><a href="#signup" data-toggle="tab"><?=$this->lang->line('register');?></a></li>
                 </ul> 
                 
                 <div id="myTabContent" class="tab-content">                    
@@ -17,14 +17,14 @@
                        <form id="login_form" class="form-horizontal" role="form" action="<?php echo base_url() ?>user/verify" method="post">
                        	  <div style="margin-top:5px;" id="msg"></div>
                           <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label" >Email</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label" ><?=$this->lang->line('email');?></label>
                             <div class="col-sm-4 col-xs-10">
                               <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email">
                             </div>
                           </div>
             
                           <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label"><?=$this->lang->line('password');?></label>
                             <div class="col-sm-4 col-xs-10">
                               <input type="password" class="form-control" id="txtpassword" name="txtpassword"  placeholder="Password">
                             </div>
@@ -32,8 +32,8 @@
                           <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">&nbsp;</label>
                             <div class="col-sm-4 col-xs-10">
-                              <button type="submit" id="btn_login" class="btn btn-success">Sign in</button>
-                              <a class="pull-right" data-toggle="modal" data-target="#forgot_pwd_modal">Forgot your password?</a>
+                              <button type="submit" id="btn_login" class="btn btn-success"><?=$this->lang->line('signIn');?></button>
+                              <a class="pull-right" data-toggle="modal" data-target="#forgot_pwd_modal"><?=$this->lang->line('forgetPwd');?></a>
                             </div>
                           </div>
                         </form>
@@ -44,27 +44,27 @@
                     	  <div id="message" style="margin-top:5px;"></div>
                          <form class="form-horizontal" id="register_form" role="form" action="<?php echo base_url() ?>user/register">
                           <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label"><?=$this->lang->line('email');?></label>
                             <div class="col-sm-4 col-xs-10">
                               <input type="email" class="form-control" id="txt_email" name="txt_email" placeholder="johndoe@mail.com">
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label"><?=$this->lang->line('Name');?></label>
                             <div class="col-sm-4 col-xs-10">
                               <input type="text" class="form-control" id="txt_name" name="txt_name" placeholder="John Doe">
                             </div>
                           </div>
             
                           <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label"><?=$this->lang->line('password');?></label>
                             <div class="col-sm-4 col-xs-10">
                               <input type="password" class="form-control" id="txt_password" name="txt_password" placeholder="******" >
                             </div>
                           </div>
                           
                           <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Re-Enter Password</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label"><?=$this->lang->line('Re-EnterPassword');?></label>
                             <div class="col-sm-4 col-xs-10">
                               <input type="password" class="form-control" id="txtcpassword" name="txtcpassword" placeholder="******">
                             </div>
@@ -74,7 +74,7 @@
                           <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">&nbsp;</label>
                             <div class="col-sm-4">
-                              <button type="submit" id="btn_register" class="btn btn-success">Register</button>
+                              <button type="submit" id="btn_register" class="btn btn-success"><?=$this->lang->line('register');?></button>
                             </div>
                           </div>
                         </form>                       

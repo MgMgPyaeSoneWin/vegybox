@@ -1,22 +1,22 @@
 <?php include('common/header.php'); ?>
-	<h2 class="heading-green" style="margin-top:0px !important;">Contact Us </h2> 
+	<h2 class="heading-green" style="margin-top:0px !important;"><?=$this->lang->line('contactUs');?></h2> 
     <hr style="margin:15px 0px;">
     
 	 <p class="text-center"></p>
      
      <div class="row" style="margin:0 auto">
      	<div class="col-md-5">
-        	<h4>ADDRESS</h4>
-            <p>16/A Tharlawaddy lane, Mayangone Township, <br> Yangon, Myanmar (Burma)</p>
+        	<h4><?=$this->lang->line('address');?></h4>
+            <p><?=$this->lang->line('location');?></p>
             
-            <h4>OFFICE HOURS</h4>
-            <p>Tuesdays, Thursdays and Saturdays <br> 10 am to 2 pm</p>
+            <h4><?=$this->lang->line('HaveanAccount');?></h4>
+            <p><?=$this->lang->line('offHour');?></p>
             
-            <h4>PHONE</h4>
-            <p>  09-792226852 <br> 792227491 </p>
+            <h4><?=$this->lang->line('phone');?></h4>
+            <p><?=$this->lang->line('ph');?></p>
             
-            <h4>EMAIL</h4>
-            <p>info@frescomyanmar.com</p>
+            <h4><?=$this->lang->line('email_contact');?></h4>
+            <p><?=$this->lang->line('email_lang');?></p>
             
         </div>
         <div class="col-md-6">

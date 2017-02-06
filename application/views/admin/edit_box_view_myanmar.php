@@ -26,7 +26,7 @@
 					echo $this->session->flashdata('error_msg');
 				}
 			?>
-         	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="<?php echo base_url() ?>admin/product/insert_box">
+         	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="<?php echo base_url() ?>admin/product/insert_box_lang">
               <input type="hidden" name="hidID" id="hidID" value="<?php echo ($box !== false ? $box->box_id : '') ?>">
               <div class="form-group">
                 <label for="inputEmail3" class="col-xs-12 col-sm-2 control-label">Box Name</label>
