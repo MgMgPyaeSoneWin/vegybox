@@ -1,12 +1,12 @@
 <?php include('common/header.php'); ?>
 
 <div class="row" style="margin:0 auto;">
-	 <h2 class="heading-green" style="margin-top:0px !important;">FAQs of Vege Box delivery service </h2> 
+	 <h2 class="heading-green" style="margin-top:0px !important;"><?=$this->lang->line('faq');?></h2> 
      <hr style="margin:15px 0px;">
-     <p> &nbsp; &nbsp; &nbsp; At Fresco, we have a “Vegy Box” service to easily get to you the best or our products. We source only the highest-quality and freshest vegetables and herbs from our farms because "Fresh" is not only our name, but also our promise! We deliver a broad range of assorted vegetables, lettuces and herbs that we grow in our farms in Shan State.</p>
+     <p><?=$this->lang->line('serviceFAQ');?></p>
      <div class="row" style="margin:0 auto;">
         <div class="notice notice-success">
-            <strong>Notice : </strong> Click on the link beside to download the user manual: <a href="<?php echo base_url() ?>assets/FrescoVegyBoxUserManual.pdf" download="FrescoVegyBoxUserManual.pdf" target="_blank" >English</a> | <a href="<?php echo base_url() ?>assets/FrescoUserManualZawgyi.pdf" download="FrescoUserManualZawgyi.pdf" target="_blank" >Myanmar</a>.
+            <strong><?=$this->lang->line('Notice');?></strong><?=$this->lang->line('userManual');?><a href="<?php echo base_url() ?>assets/FrescoVegyBoxUserManual.pdf" download="FrescoVegyBoxUserManual.pdf" target="_blank" ><?=$this->lang->line('English');?></a> | <a href="<?php echo base_url() ?>assets/FrescoUserManualZawgyi.pdf" download="FrescoUserManualZawgyi.pdf" target="_blank" ><?=$this->lang->line('Myanmar');?></a>.
         </div>
     </div>
      	<div class="faq-panel-group" id="accordion1">

@@ -23,12 +23,139 @@ $lang['email_lang'] = "U/info@frescomyanmar.com";
 
 //Edit Order View
 $lang['vegeBoxDetails'] = "U/Vege Box Details";
-$lang['additionalItems'] = "Additional Items";
-$lang['deliveryDetails'] = "Delivery Details";
-$lang['orderConfirmation'] = "Order Confirmation";
-$lang['vegyBoxDetails'] = "Vegy Box Details";
-$lang['subscribeAtLeast'] = "You will need to subscribe at least 4 boxes up to 12 boxes a month because we prepare your boxes weekly for you to have a reliable source of fresh salads and vegetables. Also, without knowing your boxes in advance our farmers have difficulty in planning their crops and cause unnecessary waste.";
-$lang['subscriber'] = "If you are new subscriber, you can order a single box one time to decide if you want to enjoy our service.";
+$lang['additionalItems'] = "U/Additional Items";
+$lang['deliveryDetails'] = "U/Delivery Details";
+$lang['orderConfirmation'] = "U/Order Confirmation";
+$lang['vegyBoxDetails'] = "U/Vegy Box Details";
+$lang['subscribeAtLeast'] = "U/You will need to subscribe at least 4 boxes up to 12 boxes a month because we prepare your boxes weekly for you to have a reliable source of fresh salads and vegetables. Also, without knowing your boxes in advance our farmers have difficulty in planning their crops and cause unnecessary waste.";
+$lang['subscriber'] = "U/If you are new subscriber, you can order a single box one time to decide if you want to enjoy our service.";
+$lang['Subscription'] = "U/Subscription :";
+$lang['yes'] = "U/Yes";
+$lang['no'] = "U/No";
+$lang['typeOfBoxes'] = "U/Type of boxes: ";
+$lang['Numberweeksyouwanttosubscribe'] = "U/Number weeks you want to subscribe:";
+$lang['Numberofboxyouwantperweek'] = "U/Number of box you want per week:";
+$lang['TypeOfBoxesAvaiableToOrder'] = "U/Type of boxes avaiable to order :";
+$lang['OtherInfo'] = "U/Other Info :";
+$lang['continue_order'] = "U/Continue  &raquo;";
+$lang['AdditionalItems'] = "U/Additional Items";
+$lang['additionalProducts'] = "U/The following are the additional products available for purchase.";
+$lang['additionalItems'] = "U/Do you want to get additional items on every week of your subscription ?";
+$lang['goBack'] = "&laquo; U/Go Back ";
+$lang['continue'] = "U/Continue &raquo;";
+$lang['addAdress'] = "U/Here, please add your address and contact details of Myanmar person so that our delivery man can contact in case we cannot find your place.";
+$lang['boxAreaLive'] = "U/The box will be delivered according with the area you live, on<b> Tue – Thu - Sat</b> from 12.00 am to 4.30 pm. ";
+$lang['exitingArea'] = "U/Use existing address & contact details";
+$lang['rem'] = "U/Remove";
+$lang['edit'] = "U/Edit";
+$lang['deliveryDay'] = "U/ Delivery Day :";
+$lang['addressAndContact'] = "U/Use new address  & contact details";
+$lang['name'] = "U/Name";
+$lang['PhoneNumber'] = "U/Phone Number ";
+$lang['Mobile'] = "U/Mobile";
+$lang['listOfTownships'] = "U/Here, you'll see the list of townships we covered.";
+$lang['DeliveryInstruction'] = "U/Delivery Instruction ";
+$lang['confirmOrder'] = "U/Confirm order ";
+$lang['chooseBox'] = "U/You've ordered 3 boxes for a week. Please choose how many boxes you want for :_";
+$lang['done'] = "U/Done";
+$lang['orderSuccessful'] = "U/Order Successfully Edited !";
+$lang['editOrderSuccessful'] = "U/You've successfully edited your order! We'll deliver your edited order in next delivery ! You can see your order processes ";
+$lang['here'] = "U/Here";
+$lang['orderFailed'] = "U/Ordering Process Failed !";
+$lang['errorProcessing'] = "U/Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.";
+
+
+//FAQ View
+$lang['faq'] = "U/FAQs of Vege Box delivery service ";
+$lang['serviceFAQ']  = "&nbsp; &nbsp; &nbsp; U/At Fresco, we have a “Vegy Box” service to easily get to you the best or our products. We source only the highest-quality and freshest vegetables and herbs from our farms because \"Fresh\" is not only our name, but also our promise! We deliver a broad range of assorted vegetables, lettuces and herbs that we grow in our farms in Shan State.";
+$lang['userManual'] = "U/Click on the link beside to download the user manual: ";
+$lang['Notice'] = "U/Notice : ";
+$lang['English'] = "U/English";
+$lang['Myanmar'] = "U/Myanmar";
+
+//My Order View
+$lang['listOfBox'] = "U/Here, you'll see the list of boxes you've ordered. You can modify your order until 3 days of delivery.";
+$lang['orderRef'] = "U/Order Ref";
+$lang['orderDate'] = "U/Order Date";
+$lang['BoxType'] = "U/Box Type";
+$lang['deliveryDay'] = "U/Delivery Day";
+$lang['addtionalItem'] = "U/Addtional Items";
+$lang['Subtotal'] = "U/Subtotal";
+$lang['weeksSubscribed'] = "U/Weeks Subscribed";
+$lang['weeksDelivered'] = "U/Weeks delivered";
+$lang['status'] = "U/Status";
+$lang['onHold'] = "U/On Hold";
+$lang['Cancelled'] = "U/Cancelled";
+$lang['editOrder'] = "U/Edit";
+$lang['onHold'] = "U/On Hold";
+$lang['Resume'] = "U/Resume";
+$lang['Cancel'] = "U/Cancel";
+$lang['cancelSubscription'] = "U/Cancel Subscription";
+$lang['Reason'] = "U/Reason : ";
+$lang['Close'] = "U/Close";
+$lang['Send'] = "U/Send";
+
+
+//Order View
+$lang['VegyBoxDetails'] = "U/Vegy Box Details";
+$lang['FAQSeciton'] = "U/Please read the FAQ section carefully before ordering, you can find all the information on how the service work there.";
+$lang['needToSubscribe'] = "U/You will need to subscribe at least 4 boxes up to 12 boxes a month because we prepare your boxes weekly for you to have a reliable source of fresh salads and vegetables. Also, without knowing your boxes in advance our farmers have difficulty in planning their crops and cause unnecessary waste.";
+$lang['newSubscriber'] = "U/If you are new subscriber, you can order a single box one time to decide if you want to enjoy our service.";
+$lang['Yes_order'] = "U/Yes";
+$lang['No_order'] = "U/No";
+$lang['Subscription_order'] = "U/Subscription :";
+$lang['typeOfBoxes'] = "U/Type of boxes: ";
+$lang['deliveryDetails'] = "U/Delivery Details";
+$lang['addContact'] = "U/Here, please add the contact details of Myanmar person so that our delivery man can contact in case we cannot find your place.";
+$lang['deliveredLive'] = "U/The box will be delivered according with the area you live, on";
+$lang['day'] = "U/Tue – Thu - Sat";
+$lang['time'] = "U/from 12.00 am to 4.30 pm. ";
+$lang['exiting_address'] = "U/Use existing address & contact details";
+$lang['newAddress'] = "U/Use new address  & contact details";
+$lang['nameMyanmar'] = "U/Name of Myanmar Person";
+$lang['phno'] = "U/Phone Number ";
+$lang['township'] = "U/Township";
+$lang['townshipsWeCoverd'] = "U/Here, you'll see the list of townships we covered. ";
+$lang['address'] = "U/Address";
+$lang['OrderDetails'] = "U/Order Details";
+$lang['Receipt'] = "U/Receipt";
+$lang['Product'] = "U/Product";
+$lang['Qty'] = "U/Qty";
+$lang['Price'] = "U/Price";
+$lang['Total'] = "U/Total";
+$lang['ConfirmOrder'] = "U/Confirm order ";
+$lang['threeBox'] = "U/You've ordered 3 boxes for a week. Please choose how many boxes you want for :_";
+$lang['Done'] = "U/Done";
+$lang['OrderSuccessful'] = "U/Order Successful!";
+$lang['successfullyOrder'] = "U/You've successfully ordered the vegy box(es)! We'll deliver your order right after 3 working days! You can see your order processes <a href=".base_url()."order/my_order>here</a>.Thank You. :)";
+$lang['errorMsg'] = "U/Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.";
+$lang['orderFailed'] = "U/Ordering Process Failed !";
+
+
+//Template
+$lang['thx'] = "U/Thank you for joining FRESCO Vegy Box Home Delivery Service. Click on the button below to activate your account. After activating your account, you may start ordering the vegy boxes. ";
+$lang['activeNow'] = "U/Activate Now";
+$lang['tku'] = "U/Thank you,";
+
+
+//My Profile
+$lang['MY_PROFILE'] = "MY PROFILE";
+$lang['ContactInfo'] = "Contact Info";
+$lang['ChangePassword'] = "Change Password";
+$lang['UpdateProfile'] = "Update";
+$lang['OldPassword'] = "Old Password";
+$lang['NewPassword'] = "New Password";
+$lang['ConfirmPassword'] = "Confirm Password";
+$lang['Change'] = "Change";
+$lang[''] = "";
+$lang[''] = "";
+$lang[''] = "";
+$lang[''] = "";
+$lang[''] = "";
+$lang[''] = "";
+
+
+
 
 //Home View
 $lang['download_app'] = "This is from unicode";

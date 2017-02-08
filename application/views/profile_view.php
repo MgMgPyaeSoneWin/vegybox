@@ -9,8 +9,8 @@
         <br>
         <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab"><b>Contact Info</b></a></li>
-            <li role="presentation"><a href="#password" aria-controls="password" role="tab" data-toggle="tab"><b>Change Password</b></a></li>
+            <li role="presentation" class="active"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab"><b><?=$this->lang->line('ContactInfo');?></b></a></li>
+            <li role="presentation"><a href="#password" aria-controls="password" role="tab" data-toggle="tab"><b><?=$this->lang->line('ChangePassword');?></b></a></li>
           </ul>
   
           <!-- Tab panes -->
@@ -19,14 +19,14 @@
             	<br> 
                 <form class="form-horizontal" id="form1" method="post" action="<?php echo base_url() ?>user/update_contact">
                     <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <label for="inputEmail" class="col-sm-2 control-label"><?=$this->lang->line('email');?></label>
                         <div class="col-sm-5">
                           <input type="text" class="form-control" value="<?php echo (isset($userdata) ? $userdata['email'] :'' ) ?>" disabled>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                        <label for="inputName" class="col-sm-2 control-label"><?=$this->lang->line('Name');?></label>
                         <div class="col-sm-5">
                           <input type="text" class="form-control" id="txtname" name="txtname" value="<?php echo (isset($userdata) ? $userdata['name'] :'' ) ?>">
                         </div>
@@ -34,7 +34,7 @@
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-5">
-                          <button type="submit" class="btn btn-success">Update</button>
+                          <button type="submit" class="btn btn-success"><?=$this->lang->line('UpdateProfile');?></button>
                         </div>
                     </div>
                       
@@ -45,21 +45,21 @@
                     
                 <form class="form-horizontal" id="form" method="post">
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Old Password</label>
+                        <label for="inputPassword3" class="col-sm-2 control-label"><?=$this->lang->line('OldPassword');?></label>
                         <div class="col-sm-5">
                           <input type="password" class="form-control" id="txt_old_pwd" name="txt_old_pwd" placeholder="Old Password">
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">New Password</label>
+                        <label for="inputPassword3" class="col-sm-2 control-label"><?=$this->lang->line('NewPassword');?></label>
                         <div class="col-sm-5">
                           <input type="password" class="form-control" id="txt_new_pwd" name="txt_new_pwd" placeholder="New Password">
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+                        <label for="inputPassword3" class="col-sm-2 control-label"><?=$this->lang->line('ConfirmPassword');?></label>
                         <div class="col-sm-5">
                           <input type="password" class="form-control" id="txt_confirm_pwd" name="txt_confirm_pwd" placeholder="Confirm Password">
                         </div>
@@ -67,7 +67,7 @@
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-5">
-                          <button type="submit" class="btn btn-success" id="btn_change">Change</button>
+                          <button type="submit" class="btn btn-success" id="btn_change"><?=$this->lang->line('Change');?></button>
                         </div>
                     </div>
                       

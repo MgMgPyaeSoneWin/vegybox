@@ -73,33 +73,101 @@ class Main extends CI_Controller
 		$data['offset'] = $this->uri->segment(3,0);
 	
 		$row_count = 0;
-		$data['list'] = $this->faq_model->get_faq_list($config['per_page'],$data['offset'],$row_count);
+		$siteLang = $this->session->userdata('site_lang');
+		if ($siteLang) {
+            if ($siteLang == "english")
+			{
+				$data['list'] = $this->faq_model->get_faq_list($config['per_page'],$data['offset'],$row_count);
 
-		$config['base_url'] =  base_url().'main/faq';
-		$config['total_rows'] = $row_count;
-		$config['full_tag_open'] = '<div class="col-xs-12"><center><ul class="pagination">';
-		$config['full_tag_close'] = '</ul></center></div>';
-		$config['cur_tag_open'] = '<li><a href=# style="color:#ffffff; background-color:#258BB5;">';
-		$config['cur_tag_close'] = '</a></li>';
-		$config['num_tag_open'] = '<li>';
-		$config['num_tag_close'] = '</li>';
-		$config['prev_tag_open'] = '<li>';
-		$config['prev_tag_close'] = '</li>';
-		$config['next_tag_open'] = '<li>';
-		$config['next_tag_close'] = '</li>';
-		$config['first_tag_open'] = '<li>';
-		$config['first_tag_close'] = '</li>';
-		$config['last_tag_open'] = '<li>';
-		$config['last_tag_close'] = '</li>';
-		$config['next_link'] = '&raquo;';
-		$config['prev_link'] = '&laquo; '; 
+				$config['base_url'] =  base_url().'main/faq';
+				$config['total_rows'] = $row_count;
+				$config['full_tag_open'] = '<div class="col-xs-12"><center><ul class="pagination">';
+				$config['full_tag_close'] = '</ul></center></div>';
+				$config['cur_tag_open'] = '<li><a href=# style="color:#ffffff; background-color:#258BB5;">';
+				$config['cur_tag_close'] = '</a></li>';
+				$config['num_tag_open'] = '<li>';
+				$config['num_tag_close'] = '</li>';
+				$config['prev_tag_open'] = '<li>';
+				$config['prev_tag_close'] = '</li>';
+				$config['next_tag_open'] = '<li>';
+				$config['next_tag_close'] = '</li>';
+				$config['first_tag_open'] = '<li>';
+				$config['first_tag_close'] = '</li>';
+				$config['last_tag_open'] = '<li>';
+				$config['last_tag_close'] = '</li>';
+				$config['next_link'] = '&raquo;';
+				$config['prev_link'] = '&laquo; '; 
+				
+				
+				$this->pagination->cur_page = $data['offset'];
+				$this->pagination->initialize($config);
+				
+				$data['pagination'] = $this->pagination->create_links();
+				$this->load->view('faq', $data);
+			} 
+			else if ($siteLang == "unicode") {
+				$data['list'] = $this->faq_model->get_faq_list_unicode($config['per_page'],$data['offset'],$row_count);
+
+				$config['base_url'] =  base_url().'main/faq';
+				$config['total_rows'] = $row_count;
+				$config['full_tag_open'] = '<div class="col-xs-12"><center><ul class="pagination">';
+				$config['full_tag_close'] = '</ul></center></div>';
+				$config['cur_tag_open'] = '<li><a href=# style="color:#ffffff; background-color:#258BB5;">';
+				$config['cur_tag_close'] = '</a></li>';
+				$config['num_tag_open'] = '<li>';
+				$config['num_tag_close'] = '</li>';
+				$config['prev_tag_open'] = '<li>';
+				$config['prev_tag_close'] = '</li>';
+				$config['next_tag_open'] = '<li>';
+				$config['next_tag_close'] = '</li>';
+				$config['first_tag_open'] = '<li>';
+				$config['first_tag_close'] = '</li>';
+				$config['last_tag_open'] = '<li>';
+				$config['last_tag_close'] = '</li>';
+				$config['next_link'] = '&raquo;';
+				$config['prev_link'] = '&laquo; '; 
+				
+				
+				$this->pagination->cur_page = $data['offset'];
+				$this->pagination->initialize($config);
+				
+				$data['pagination'] = $this->pagination->create_links();
+				$this->load->view('faq', $data);
+			}
+			else if ($siteLang == "zawgyi") {
+				$data['list'] = $this->faq_model->get_faq_list_zawgyi($config['per_page'],$data['offset'],$row_count);
+
+				$config['base_url'] =  base_url().'main/faq';
+				$config['total_rows'] = $row_count;
+				$config['full_tag_open'] = '<div class="col-xs-12"><center><ul class="pagination">';
+				$config['full_tag_close'] = '</ul></center></div>';
+				$config['cur_tag_open'] = '<li><a href=# style="color:#ffffff; background-color:#258BB5;">';
+				$config['cur_tag_close'] = '</a></li>';
+				$config['num_tag_open'] = '<li>';
+				$config['num_tag_close'] = '</li>';
+				$config['prev_tag_open'] = '<li>';
+				$config['prev_tag_close'] = '</li>';
+				$config['next_tag_open'] = '<li>';
+				$config['next_tag_close'] = '</li>';
+				$config['first_tag_open'] = '<li>';
+				$config['first_tag_close'] = '</li>';
+				$config['last_tag_open'] = '<li>';
+				$config['last_tag_close'] = '</li>';
+				$config['next_link'] = '&raquo;';
+				$config['prev_link'] = '&laquo; '; 
+				
+				
+				$this->pagination->cur_page = $data['offset'];
+				$this->pagination->initialize($config);
+				
+				$data['pagination'] = $this->pagination->create_links();
+				$this->load->view('faq', $data);
+			}
+			else {
+				var_dump("error");die();
+			}
+        } 
 		
-		
-		$this->pagination->cur_page = $data['offset'];
-		$this->pagination->initialize($config);
-		
-		$data['pagination'] = $this->pagination->create_links();
-		$this->load->view('faq', $data);
 	}
 	
 	public function contact_us()

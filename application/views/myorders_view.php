@@ -5,7 +5,7 @@
         <div class="widget-header">					
         <h2 class="heading-green" style="padding:10px;">
         	<b>MY ORDERS</b> 
-            <small><a data-toggle="tooltip" data-placement="right" title="Here, you'll see the list of boxes you've ordered. You can modify your order until 3 days of delivery."> <i class="glyphicon glyphicon-question-sign"></i> </a></small> 
+            <small><a data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('listOfBox');?>"> <i class="glyphicon glyphicon-question-sign"></i> </a></small> 
         </h2>
 
     </div> <!-- /widget-header -->
@@ -15,15 +15,15 @@
         	<table class="col-md-12 table-bordered table-striped table-condensed cf">
         		<thead class="cf">
         			<tr>
-                    	<th>Order Ref</th>
-        				<th>Order Date</th>
-        				<th class="text-center">Box Type</th>
-        				<th class="text-center">Delivery Day</th>
-        				<th class="text-center">Addtional Items</th>
-        				<th class="numeric">Subtotal</th>
-                        <th class="text-center">Weeks Subscribed</th>
-        				<th class="text-center">Weeks delivered</th>
-                        <th class="text-center">Status</th>
+                    	<th><?=$this->lang->line('orderRef');?></th>
+        				<th><?=$this->lang->line('orderDate');?></th>
+        				<th class="text-center"><?=$this->lang->line('BoxType');?></th>
+        				<th class="text-center"><?=$this->lang->line('deliveryDay');?></th>
+        				<th class="text-center"><?=$this->lang->line('addtionalItem');?></th>
+        				<th class="numeric"><?=$this->lang->line('Subtotal');?></th>
+                        <th class="text-center"><?=$this->lang->line('weeksSubscribed');?></th>
+        				<th class="text-center"><?=$this->lang->line('weeksDelivered');?></th>
+                        <th class="text-center"><?=$this->lang->line('status');?></th>
         				<th></th>
         			</tr>
         		</thead>
@@ -50,8 +50,8 @@
 						?>                          
                         </ul>
                         </td>
-        				<td class="text-center" data-title="Delivery Day"><?= $row->delivery_day ?></td>
-        				<td data-title="Addtional Items">
+        				<td class="text-center" data-title="<?=$this->lang->line('deliveryDay');?>"><?= $row->delivery_day ?></td>
+        				<td data-title="<?=$this->lang->line('addtionalItem');?>">
                         <ul>
                          <?php
 							if($row->item_num >= 1)
@@ -85,10 +85,10 @@
 								{
 									switch ($row->order_status) {
 									    case "Pause":
-									        echo 'On Hold';
+									        echo $this->lang->line('onHold');
 									        break;
 									    case "Stop":
-									        echo 'Cancelled';
+									        echo $this->lang->line('Cancelled');
 									        break;
 									    default:
 									        echo $row->order_status;
@@ -131,20 +131,20 @@
 									if( $check == true ||  $days_left > 3):
 								
 						?>     
-                            			<a href="<?= base_url().'order/edit_order/'. $row->order_id ?>" class="btn btn-info btn-catchy-info btn-sm" title="Edit Order"> Edit</a>
+                            			<a href="<?= base_url().'order/edit_order/'. $row->order_id ?>" class="btn btn-info btn-catchy-info btn-sm" title="Edit Order"><?=$this->lang->line('editOrder');?></a>
 
 										<?php if($row->subscription == 'Yes'): 	
                                                 if($row->order_status == 'On-going'):
                                         ?>
-                            						<a class="btn btn-warning btn-catchy-warning btn-sm btn_pause" data-id="<?=  $row->order_id ?>" title="On Hold Subscription"> On Hold</a>
+                            						<a class="btn btn-warning btn-catchy-warning btn-sm btn_pause" data-id="<?=  $row->order_id ?>" title="On Hold Subscription"><?=$this->lang->line('onHold');?></a>
                             
                        					<?php 	else: ?>
                         
-                        							<a class="btn btn-success btn-catchy-success btn-sm btn_resume" data-id="<?=  $row->order_id ?>"  title="Resume Subscription"> Resume</a>
+                        							<a class="btn btn-success btn-catchy-success btn-sm btn_resume" data-id="<?=  $row->order_id ?>"  title="Resume Subscription"><?=$this->lang->line('Resume');?></a>
                             
                         				<?php	endif; ?> 
                                                                   
-	                            				<a class="btn btn-danger btn-catchy-danger btn-sm btn_stop" data-id="<?=  $row->order_id ?>" title="Cancel Subscription"> Cancel</a>
+	                            				<a class="btn btn-danger btn-catchy-danger btn-sm btn_stop" data-id="<?=  $row->order_id ?>" title="Cancel Subscription"><?=$this->lang->line('Cancel');?></a>
                         				<?php endif; 	?>
                         </td>
                        <?php 	endif; 
@@ -170,21 +170,21 @@
         <div class="modal-content">
             <div class="modal-header modal-header-primary">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h2 style="margin-bottom:0px;"> Cancel Subscription  </h2>
+                <h2 style="margin-bottom:0px;"><?=$this->lang->line('cancelSubscription');?></h2>
             </div>
             <div class="modal-body">
             	<div id="msg"></div>
                 <form id="stop_form">
                 	<input type="hidden" id="hid_order_id" name="hid_order_id" value="">
                     <div class="form-group">
-                       <label>Reason : </label>
+                       <label><?=$this->lang->line('Reason');?></label>
                        <textarea class="form-control" name="txtreason" id="txtreason" rows="5"></textarea>
                       </div>
                 </form>
             </div>
             <div class="modal-footer">
-            	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            	<button class="btn btn-primary" id="btn_send">Send</button>
+            	<button type="button" class="btn btn-default" data-dismiss="modal"><?=$this->lang->line('Close');?></button>
+            	<button class="btn btn-primary" id="btn_send"><?=$this->lang->line('Send');?></button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

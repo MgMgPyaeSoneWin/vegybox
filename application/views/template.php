@@ -11,11 +11,11 @@
     </div>
     
     <div style="99%; padding-left:15px;font-family: sans-serif;font-size:14px">
-    <p>Thank you for joining FRESCO Vegy Box Home Delivery Service. Click on the button below to activate your account. After activating your account, you may start ordering the vegy boxes. </p>
+    <p><?=$this->lang->line('thx');?></p>
     
-    <center><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;color: #fff;font-family: Cabin,Avenir,sans-serif;background-color: #4c5b6b;" href="http://test.com">Activate Now</a></center>
+    <center><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;color: #fff;font-family: Cabin,Avenir,sans-serif;background-color: #4c5b6b;" href="http://test.com"><?=$this->lang->line('activeNow');?></a></center>
     
-    <p>Thank you, <br /> <?php echo (isset($setting->company_name) ? $setting->company_name : 'Fresco, Valleverde Co.Ltd'); ?>
+    <p><?=$this->lang->line('tku');?><br /> <?php echo (isset($setting->company_name) ? $setting->company_name : 'Fresco, Valleverde Co.Ltd'); ?>
     </p>
     
     </div>

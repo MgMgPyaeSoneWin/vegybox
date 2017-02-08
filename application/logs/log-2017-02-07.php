@@ -462,3 +462,275 @@ ERROR - 2017-02-07 05:53:52 --> 404 Page Not Found: Assets/img
 ERROR - 2017-02-07 05:54:23 --> 404 Page Not Found: Assets/img
 ERROR - 2017-02-07 05:55:12 --> 404 Page Not Found: Assets/img
 ERROR - 2017-02-07 05:55:12 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:43:04 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:04 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:43:05 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:05 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:43:05 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:09 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:09 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:43:09 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:43:09 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:43:09 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:43:09 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:43:09 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:43:09 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:43:10 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:43:10 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:43:11 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:11 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:43:11 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:43:11 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:43:12 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:12 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:43:12 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:12 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:43:17 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:43:17 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:17 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:43:51 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:43:51 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:51 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:43:52 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:43:52 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:45:02 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:45:02 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:45:02 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:45:42 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:45:42 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:45:42 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:45:42 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:45:42 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:46:08 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:46:31 --> Query error: Table 'vegyboxadmin.fr_delivery_info' doesn't exist - Invalid query: SELECT SQL_CALC_FOUND_ROWS o.`order_id`, o.`order_ref`, o.`order_date`, o.`subscription`, o.week_num, o.`order_status`, o.`subtotal`, o.week_status, o.order_date, dd.name as `delivery_day`, d.`delivery_status`
+, GROUP_CONCAT(DISTINCT CONCAT(b.`name`, ':', od.`qty`)) AS boxes
+, GROUP_CONCAT(DISTINCT CONCAT(a.`name`, IF(a.`type` IS NULL, ' ' , CONCAT(' - ',  a.`type`)) , ':', a.`net_weight`, ':', ad.`item_qty`)) AS items
+, COUNT(DISTINCT od.`box_id`) AS box_num, COUNT(DISTINCT a.`item_id`) AS item_num
+, (SELECT dl.order_date FROM fr_delivery_log dl WHERE dl.order_id = o.`order_id` AND dl.delivery_date IS NULL ORDER BY dl.order_date ASC LIMIT 1) AS next_del
+FROM `fr_order` o
+LEFT OUTER JOIN `fr_order_details` od ON o.`order_id` = od.`order_id` 
+LEFT OUTER JOIN `fr_box` b ON b.`box_id` = od.`box_id`
+LEFT OUTER JOIN `fr_additional_order` ad ON o.`order_id` = ad.`order_id`
+LEFT OUTER JOIN `fr_additional_items` a ON a.`item_id` = ad.`item_id`
+LEFT OUTER JOIN `fr_delivery_info` d ON o.`order_id` = d.`order_id`
+LEFT OUTER JOIN `fr_addresses` adr ON adr.`address_id` = d.`address_id`
+LEFT OUTER JOIN `fr_township_detail` td ON adr.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_delivery_day` dd ON dd.`day_id` = td.`day_id`
+WHERE o.`user_id` = '1'
+GROUP BY o.`order_id`
+ORDER BY o.`order_date` DESC LIMIT 10
+ERROR - 2017-02-07 13:46:31 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/Order_model.php 1032
+ERROR - 2017-02-07 13:46:31 --> Query error: Table 'vegyboxadmin.fr_delivery_info' doesn't exist - Invalid query: SELECT SQL_CALC_FOUND_ROWS o.`order_id`, o.`order_ref`, o.`order_date`, o.`subscription`, o.week_num, o.`order_status`, o.`subtotal`, o.week_status, o.order_date, dd.name as `delivery_day`, d.`delivery_status`
+, GROUP_CONCAT(DISTINCT CONCAT(b.`name`, ':', od.`qty`)) AS boxes
+, GROUP_CONCAT(DISTINCT CONCAT(a.`name`, IF(a.`type` IS NULL, ' ' , CONCAT(' - ',  a.`type`)) , ':', a.`net_weight`, ':', ad.`item_qty`)) AS items
+, COUNT(DISTINCT od.`box_id`) AS box_num, COUNT(DISTINCT a.`item_id`) AS item_num
+, (SELECT dl.order_date FROM fr_delivery_log dl WHERE dl.order_id = o.`order_id` AND dl.delivery_date IS NULL ORDER BY dl.order_date ASC LIMIT 1) AS next_del
+FROM `fr_order` o
+LEFT OUTER JOIN `fr_order_details` od ON o.`order_id` = od.`order_id` 
+LEFT OUTER JOIN `fr_box` b ON b.`box_id` = od.`box_id`
+LEFT OUTER JOIN `fr_additional_order` ad ON o.`order_id` = ad.`order_id`
+LEFT OUTER JOIN `fr_additional_items` a ON a.`item_id` = ad.`item_id`
+LEFT OUTER JOIN `fr_delivery_info` d ON o.`order_id` = d.`order_id`
+LEFT OUTER JOIN `fr_addresses` adr ON adr.`address_id` = d.`address_id`
+LEFT OUTER JOIN `fr_township_detail` td ON adr.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_delivery_day` dd ON dd.`day_id` = td.`day_id`
+WHERE o.`user_id` = '1'
+GROUP BY o.`order_id`
+ORDER BY o.`order_date` DESC LIMIT 10
+ERROR - 2017-02-07 13:46:31 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/Order_model.php 1032
+ERROR - 2017-02-07 13:46:33 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:46:33 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:46:34 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:46:34 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:46:34 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:46:34 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:46:34 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:08 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:10 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:11 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:14 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:14 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:15 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:17 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:17 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:19 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:19 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:20 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:26 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:48:33 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:33 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:33 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:33 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:33 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:33 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:48:33 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:33 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:48:34 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:34 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:35 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:35 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:35 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:35 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:35 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:36 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:48:36 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:36 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:48:36 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:36 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:41 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:41 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:48:41 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:41 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:48:41 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:41 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:48:41 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:41 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:48:48 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:48 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:48:48 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:48 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:48:48 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:48 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:48:48 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:48 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-07 13:48:51 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '349'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:48:51 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:51 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:55 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '349'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-07 13:48:55 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:55 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:57 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:48:57 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-07 13:48:57 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:48:57 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:49:07 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:49:07 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-07 13:49:07 --> 404 Page Not Found: Main/js
+ERROR - 2017-02-07 13:49:07 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:49:07 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:49:23 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:49:23 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:49:23 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:49:23 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:49:23 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:49:24 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "tired_of_wasting_time_in_traffic"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "are_you_too_busy"
+ERROR - 2017-02-07 13:49:24 --> Could not find the language line "Order_Vegy_Box_Now"
+ERROR - 2017-02-07 13:50:02 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:50:08 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:51:26 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 52
+ERROR - 2017-02-07 13:54:26 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 53
+ERROR - 2017-02-07 13:54:32 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 53
+ERROR - 2017-02-07 13:54:38 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 53
+ERROR - 2017-02-07 13:56:26 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 54
+ERROR - 2017-02-07 13:56:32 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 54
+ERROR - 2017-02-07 15:13:02 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 56
+ERROR - 2017-02-07 15:13:08 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 56
+ERROR - 2017-02-07 15:14:56 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 58
+ERROR - 2017-02-07 15:15:02 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 58
+ERROR - 2017-02-07 15:15:56 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 59
+ERROR - 2017-02-07 15:19:08 --> Severity: Parsing Error --> syntax error, unexpected '$lang' (T_VARIABLE) /Applications/MAMP/htdocs/vegybox/application/language/unicode/message_lang.php 60

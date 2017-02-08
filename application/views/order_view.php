@@ -46,11 +46,11 @@
             		<!-- Vegebox Details -->                
                     <div class="tab-pane active" role="tabpanel" id="step1">
                        
-                        <h2 class="heading-green">Vegy Box Details
-                        	<small><a data-toggle="tooltip" data-placement="right" title="Please read the FAQ section carefully before ordering, you can find all the information on how the service work there."> <i class="glyphicon glyphicon-question-sign"></i> </a></small> 
+                        <h2 class="heading-green"><?=$this->lang->line('VegyBoxDetails');?>
+                        	<small><a data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('FAQSeciton');?>"> <i class="glyphicon glyphicon-question-sign"></i> </a></small> 
                         </h2>  
-                       <p> You will need to subscribe at least 4 boxes up to 12 boxes a month because we prepare your boxes weekly for you to have a reliable source of fresh salads and vegetables. Also, without knowing your boxes in advance our farmers have difficulty in planning their crops and cause unnecessary waste.</p>
-                       <p>If you are new subscriber, you can order a single box one time to decide if you want to enjoy our service.</p>
+                       <p><?=$this->lang->line('needToSubscribe');?></p>
+                       <p><?=$this->lang->line('newSubscriber');?></p>
 
                         <hr style="margin:5px 0px;" />
                         
@@ -61,26 +61,23 @@
 							
 							?>
                             <div class="form-group" id="div_subscription">
-                                <label class="col-sm-3 control-label">Subscription :</label>
+                                <label class="col-sm-3 control-label"><?=$this->lang->line('Subscription_order');?>"></label>
                                 
                                 <div class="col-sm-8" style="padding-top:0px;">
                                    <label class="radio-inline">
-                                      <input type="radio" name="rdo_subscription" id="rdo_yes" value="YES" checked> Yes
+                                      <input type="radio" name="rdo_subscription" id="rdo_yes" value="YES" checked> <?=$this->lang->line('Yes_order');?>
                                     </label>
                                     <label class="radio-inline">
-                                      <input type="radio" name="rdo_subscription" id="rdo_no" value="NO"> No
+                                      <input type="radio" name="rdo_subscription" id="rdo_no" value="NO"><?=$this->lang->line('Yes_order');?>
                                     </label>
                                 </div>
                             </div>
                             <?php 
 								} 
-								
-							
 							?>  
-       
                              <input type="hidden" name="hid_box_count" id="hid_box_count">         
                             <div class="form-group" id="div_boxes" style="display:none;">
-                                <label class="col-sm-3 control-label">Type of boxes: </label>                    			
+                                <label class="col-sm-3 control-label"><?=$this->lang->line('typeOfBoxes');?></label>                    			
                                 
                                 <div class="col-sm-9">
                                 	<div class="row" style="margin: 0 auto">
@@ -112,7 +109,7 @@
 
                             <div id="div_week_num">                            
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Number of weeks you want to subscribe:</label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('Numberweeksyouwanttosubscribe');?></label>
                                     
                                     <div class="col-sm-2"  style="padding:10px 0 0 30px;">                                      
     
@@ -145,7 +142,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                	<label class="col-sm-3 control-label">Type of boxes avaiable to order :</label>
+                                	<label class="col-sm-3 control-label"><?=$this->lang->line('TypeOfBoxesAvaiableToOrder');?></label>
                                     
                                     <div class="col-sm-9" style="padding-top:0px;">
                                     	<div class="row" style="margin: 0 auto">
@@ -184,7 +181,7 @@
                             
                             
                             <div class="form-group" style="clear:both;">
-                                <label class="col-sm-3 control-label">Other Info :</label>
+                                <label class="col-sm-3 control-label"><?=$this->lang->line('OtherInfo');?></label>
                                 
                                 <div class="col-sm-5" style="padding-top:0px;">
                                     <textarea class="form-control" name="txt_info" rows="3" placeholder="Note the vegetables you don't want in your box.."></textarea>
@@ -200,17 +197,17 @@
                     </div>
                     
                     <div class="tab-pane" role="tabpanel" id="step2">
-                    	<h2 class="heading-green">Additional Items</h2>  
-                        <p>The following are the additional products available for purchase.</p>                        
+                    	<h2 class="heading-green"><?=$this->lang->line('AdditionalItems');?></h2>  
+                        <p><?=$this->lang->line('additionalProducts');?>"></p>                        
 	     				<div class="form-group" id="div_item_sub">
-                            <label class="col-sm-12 control-label" style="text-align:left;">Do you want to get additional items on every week of your subscription ?</label>
+                            <label class="col-sm-12 control-label" style="text-align:left;"><?=$this->lang->line('additionalItems');?></label>
                             
                             <div class="col-sm-12" style="padding-top:0px;">
                                <label class="radio-inline">
-                                  <input type="radio" name="rdo_item_subscription" id="rdo_yes" value="YES"> Yes
+                                  <input type="radio" name="rdo_item_subscription" id="rdo_yes" value="YES"> <?=$this->lang->line('Yes_order');?>
                                 </label>
                                 <label class="radio-inline">
-                                  <input type="radio" name="rdo_item_subscription" id="rdo_no" value="NO" checked> No
+                                  <input type="radio" name="rdo_item_subscription" id="rdo_no" value="NO" checked> <?=$this->lang->line('No_order');?>
                                 </label>
                             </div>
                         </div>
@@ -221,17 +218,17 @@
                             
                     	<div class="row" style="margin:0 auto;">
                         	<hr style="margin:15px 0px;">
-                            <button type="button" class="btn btn-warning btn-catchy-warning prev-step">&laquo; Go Back </button>
-                            <button type="button" class="btn btn-danger btn-catchy-danger  next-step pull-right">Continue &raquo;</button>
+                            <button type="button" class="btn btn-warning btn-catchy-warning prev-step"><?=$this->lang->line('goBack');?>"> </button>
+                            <button type="button" class="btn btn-danger btn-catchy-danger  next-step pull-right"><?=$this->lang->line('continue');?></button>
                         </div>
                     </div>
                     
                     <!-- Delivery Detail-->
                     <div class="tab-pane" role="tabpanel" id="step3">
-                         <h2 class="heading-green">Delivery Details
-                           <small><a data-toggle="tooltip" data-placement="right" title="Here, please add the contact details of Myanmar person so that our delivery man can contact in case we cannot find your place."> <i class="glyphicon glyphicon-question-sign"></i> </a></small> 
+                         <h2 class="heading-green"><?=$this->lang->line('deliveryDetails');?>">
+                           <small><a data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('addContact');?>"> <i class="glyphicon glyphicon-question-sign"></i> </a></small> 
                          </h2>  
-                         <p>The box will be delivered according with the area you live, on<b> Tue – Thu - Sat</b> from 12.00 am to 4.30 pm. </p>                        
+                         <p><?=$this->lang->line('deliveredLive');?><b> <?=$this->lang->line('day');?></b><?=$this->lang->line('time');?></p>                        
      					 <hr style="margin:15px 0px;">                         
                          <?php if(isset($address) && $address !== false) { ?>
                             <div class="form-group">
@@ -239,7 +236,7 @@
                                 <div class="radio col-sm-11">
                                   <label>
                                     <input type="radio" name="rdo_address" id="rdo_old" value="old" checked>
-                                    <h5 style="font-weight:bold;">Use existing address & contact details</h5>
+                                    <h5 style="font-weight:bold;"><?=$this->lang->line('exiting_address');?></h5>
                                   </label>
                                   <div class="row" style="margin:0 auto;">
                                   	<div class="funkyradio">
@@ -280,7 +277,7 @@
                                 <div class="radio col-sm-5">
                                   <label>
                                     <input type="radio" name="rdo_address" id="rdo_new" value="new">
-                                    <h5 style="font-weight:bold;"> Use new address  & contact details</h5>
+                                    <h5 style="font-weight:bold;"><?=$this->lang->line('newAddress');?></h5>
                                   </label>
                                   <div style="margin-top:5px;" id="msg"></div>
                                 </div>
@@ -289,7 +286,7 @@
                             
                             <div id="holder" style="<?php echo (isset($address) && $address !== false ? 'display:none' : 'display:block' ) ?>;">
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Name of Myanmar Person </label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('nameMyanmar');?></label>
                                     
                                     <div class="col-sm-5" style="padding-top:0px;">
                                         <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Myanmar Contact Person Name...">
@@ -298,7 +295,7 @@
                                 </div>  
                                 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Phone Number </label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('phno');?></label>
                                     
                                     <div class="col-sm-5" style="padding-top:0px;">
                                         <input type="text" class="form-control" id="txtphone" name="txtphone" placeholder="Contact Number...">
@@ -307,7 +304,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label"> Mobile </label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('Mobile');?></label>
                                     
                                     <div class="col-sm-5" style="padding-top:0px;">
                                         <input type="text" class="form-control" id="txtmobile" name="txtmobile" placeholder="Mobile Phone Number...">
@@ -316,7 +313,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Township </label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('township');?></label>
                                     
                                     <div class="col-sm-5" style="padding-top:0px;">
                                         <select class="input-sm" name="cbotownship"  id="cbotownship">
@@ -331,13 +328,13 @@
 											}
 										  ?>	  
                                         </select>
-                                        <small><a data-toggle="tooltip" data-placement="right" title="Here, you'll see the list of townships we covered. "> <i class="glyphicon glyphicon-question-sign"></i> </a></small>                                        
+                                        <small><a data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('townshipsWeCoverd');?>"> <i class="glyphicon glyphicon-question-sign"></i> </a></small>                                        
                                     </div>
                                     <span class="err"></span>
                                 </div>  
                                 
                                 <div class="form-group" id="div_delivery" style="display:none;">
-                                    <label class="col-xs-5 col-sm-3 control-label">Delivery Day :</label>
+                                    <label class="col-xs-5 col-sm-3 control-label"><?=$this->lang->line('deliveryDay');?></label>
                                     
                                     <div class="col-xs-5" style="padding-top:0px;" id="delivery_day"></div>
                                 </div>
@@ -354,7 +351,7 @@
                                 </div>
                                 
                                 <div class="form-group" id="div_address">
-                                    <label class="col-sm-3 control-label">Address </label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('Address');?> </label>
                                     
                                     <div class="col-sm-5" style="padding-top:0px;">
                                         <textarea class="form-control" name="txtaddress" id="txtaddress" placeholder="Building No, Floor, Nearby landmark/building etc.," rows="5"></textarea>
@@ -363,7 +360,7 @@
                                 </div>
                                 
                                 <div class="form-group" id="div_instruction">
-                                    <label class="col-sm-3 control-label">Delivery Instruction </label>
+                                    <label class="col-sm-3 control-label"><?=$this->lang->line('DeliveryInstruction');?> </label>
                                     
                                     <div class="col-sm-5" style="padding-top:0px;">
                                         <textarea class="form-control" name="txtinstruction" placeholder="Note a place or instruction to leave your delivery in a safe place when you are not at home" rows="5"></textarea>
@@ -376,14 +373,14 @@
  						 <hr style="margin:15px 0px;">
                          
                         <div class="row" style="margin:0 auto;">                            
-                            <button type="button" class="btn btn-warning btn-catchy-warning prev-step">&laquo; Go Back </button>
-                            <button type="button" class="btn btn-danger btn-catchy-danger next-step pull-right" id="btn_continue_3">Continue &raquo;</button>
+                            <button type="button" class="btn btn-warning btn-catchy-warning prev-step"><?=$this->lang->line('goBack');?></button>
+                            <button type="button" class="btn btn-danger btn-catchy-danger next-step pull-right" id="btn_continue_3"><?=$this->lang->line('continue');?></button>
                         </div>
                     </div>
                     
                     <!-- Order Confirmation -->
                     <div class="tab-pane" role="tabpanel" id="complete">
-                        <h2 class="heading-green">Order Details</h2> 
+                        <h2 class="heading-green"><?=$this->lang->line('OrderDetails');?></h2> 
       					<hr style="margin:15px 0px;">
                           
                         <div class="col-xs-10 col-sm-10 col-md-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-2">
@@ -399,16 +396,16 @@
                             </div>
                             <div class="row" style="margin: 0 auto">
                                 <div class="text-center">
-                                    <h1>Receipt</h1>
+                                    <h1><?=$this->lang->line('Receipt');?></h1>
                                 </div>
 								<div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Product</th>
+                                            <th><?=$this->lang->line('Product');?></th>
                                             <th>Qty</th>
-                                            <th class="text-right">Price <small>(Ks)</small></th>
-                                            <th class="text-right">Total <small>(Ks)</small></th>
+                                            <th class="text-right"><?=$this->lang->line('Price');?> <small>(Ks)</small></th>
+                                            <th class="text-right"><?=$this->lang->line('Total');?> <small>(Ks)</small></th>
                                         </tr>
                                     </thead>
                                     <tbody id="tbl_receipt">
@@ -419,8 +416,8 @@
                             <hr style="margin:15px 0px;">
                             
                             <center>
-                            <button type="button" class="btn btn-warning btn-catchy-warning prev-step">&laquo; Go Back </button>
-                            <button type="button" id="btn_confirm" class="btn btn-success btn-catchy-success ">Confirm order </button>
+                            <button type="button" class="btn btn-warning btn-catchy-warning prev-step"><?=$this->lang->line('goBack');?></button>
+                            <button type="button" id="btn_confirm" class="btn btn-success btn-catchy-success "><?=$this->lang->line('ConfirmOrder');?></button>
                             
                             </center>
                     </div>
@@ -435,11 +432,11 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <p>You've ordered 3 boxes for a week. Please choose how many boxes you want for :_</p>
+        <p><?=$this->lang->line('threeBox');?></p>
         <div id="modal_boxes" ></div>
        </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><?=$this->lang->line('Done');?></button>
       </div>
     </div>
   </div>
@@ -454,10 +451,10 @@
         <div class="modal-content">
             <div class="modal-header modal-header-success">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h1 style="margin-bottom:0px;"><i class="glyphicon glyphicon-ok-sign"></i> Order Successful !</h1>
+                <h1 style="margin-bottom:0px;"><i class="glyphicon glyphicon-ok-sign"></i><?=$this->lang->line('OrderSuccessful');?></h1>
             </div>
             <div class="modal-body">
-                <p>You've successfully ordered the vegy box(es)! We'll deliver your order right after 3 working days! You can see your order processes <a href="<?php echo base_url() ?>order/my_order">here</a>.Thank You. :)</p>
+                <p><?=$this->lang->line('successfullyOrder');?></p>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -470,10 +467,10 @@
         <div class="modal-content">
             <div class="modal-header modal-header-danger">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h1 style="margin-bottom:0px;"><i class="glyphicon glyphicon-remove-sign"></i> Ordering Process Failed ! </h1>
+                <h1 style="margin-bottom:0px;"><i class="glyphicon glyphicon-remove-sign"></i><?=$this->lang->line('orderFailed');?></h1>
             </div>
             <div class="modal-body">
-                <p id="err_msg">Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.</p>
+                <p id="err_msg"><?=$this->lang->line('errorMsg');?></p>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
