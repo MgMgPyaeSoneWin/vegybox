@@ -219,3 +219,96 @@ ERROR - 2017-02-08 08:58:09 --> Could not find the language line "welcome_messag
 ERROR - 2017-02-08 08:58:09 --> Could not find the language line "sitAndRelax"
 ERROR - 2017-02-08 08:58:09 --> Could not find the language line "welcome_message"
 ERROR - 2017-02-08 08:58:09 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "company"
+ERROR - 2017-02-08 09:20:47 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:20:47 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "company"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:47 --> Could not find the language line "company"
+ERROR - 2017-02-08 09:20:51 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:51 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:51 --> Could not find the language line "company"
+ERROR - 2017-02-08 09:20:51 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:20:52 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:20:52 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:52 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:52 --> Could not find the language line "company"
+ERROR - 2017-02-08 09:20:52 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:52 --> Could not find the language line "sitAndRelax"
+ERROR - 2017-02-08 09:20:52 --> Could not find the language line "company"
+ERROR - 2017-02-08 09:20:55 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:55 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-08 09:20:55 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:20:55 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-08 09:20:55 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:20:55 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:20:55 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:15 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-08 09:21:15 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:21:15 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:21:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:15 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-08 09:21:15 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:15 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-08 09:21:17 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '349'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-08 09:21:17 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:17 --> Could not find the language line "Address"
+ERROR - 2017-02-08 09:21:18 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:21:19 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:21:20 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '349'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-08 09:21:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:20 --> Could not find the language line "Address"
+ERROR - 2017-02-08 09:21:20 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT a.*, t.name AS `township_name`, d.name AS delivery_day
+FROM `fr_addresses` a 
+LEFT OUTER JOIN `fr_township_detail` td ON a.`township_id` = td.`tspdetail_id`
+LEFT OUTER JOIN `fr_township` t ON t.`township_id` = td.`township_id`
+LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
+WHERE a.user_id = '349'  AND d.`delivery` = 'YES' GROUP BY address_id
+ERROR - 2017-02-08 09:21:20 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:20 --> Could not find the language line "Address"
+ERROR - 2017-02-08 09:21:54 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:55 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-08 09:21:55 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:21:55 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-08 09:21:55 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:55 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:21:55 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:57 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:57 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-08 09:21:57 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:21:57 --> 404 Page Not Found: Assets/img
+ERROR - 2017-02-08 09:21:57 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:21:57 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:21:57 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:22:00 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:22:00 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-08 09:22:00 --> 404 Page Not Found: Assets/fonts
+ERROR - 2017-02-08 09:22:00 --> 404 Page Not Found: Js/placeholder.js
+ERROR - 2017-02-08 09:22:00 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:22:00 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-08 09:22:00 --> Could not find the language line "welcome_message"
+ERROR - 2017-02-08 09:22:00 --> Could not find the language line "HaveanAccount"
+ERROR - 2017-02-08 09:22:11 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-08 09:22:11 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-08 09:22:11 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-08 09:22:11 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-08 09:22:16 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-08 09:22:16 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-08 09:22:17 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-08 09:22:17 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52

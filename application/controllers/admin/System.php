@@ -102,44 +102,6 @@ class System extends CI_Controller
 		$this->load->view('admin/faq_list_view.php',$data);
 	}
 
-	public function faq_list_lang($language)
-	{
-		$this->load->helper('url');
-		$this->load->library('pagination');	
-		
-		
-		$data['per_page'] = 10;
-		$config['per_page'] = $data['per_page'];
-		$data['offset'] = $this->uri->segment(4,0);
-
-		$row_count = 0;
-		$data['list'] = $this->system_model->get_faq_list_lang($config['per_page'],$data['offset'],$row_count,$language); 
-		$config['base_url'] =  base_url().'admin/system/faq_list';
-		$config['total_rows'] = $row_count;
-		$config['full_tag_open'] = '<div class="col-xs-12"><center><ul class="pagination">';
-		$config['full_tag_close'] = '</ul></center></div>';
-		$config['cur_tag_open'] = '<li><a href=# style="color:#ffffff; background-color:#258BB5;">';
-		$config['cur_tag_close'] = '</a></li>';
-		$config['num_tag_open'] = '<li>';
-		$config['num_tag_close'] = '</li>';
-		$config['prev_tag_open'] = '<li>';
-		$config['prev_tag_close'] = '</li>';
-		$config['next_tag_open'] = '<li>';
-		$config['next_tag_close'] = '</li>';
-		$config['first_tag_open'] = '<li>';
-		$config['first_tag_close'] = '</li>';
-		$config['last_tag_open'] = '<li>';
-		$config['last_tag_close'] = '</li>';
-		$config['next_link'] = '&raquo;';
-		$config['prev_link'] = '&laquo; '; 
-		
-		
-		$this->pagination->cur_page = $data['offset'];
-		$this->pagination->initialize($config);
-		
-		$data['pagination'] = $this->pagination->create_links();
-		$this->load->view('admin/faq_list_view.php',$data);
-	}
 	
 	function faq_entry($id = "")
 	{

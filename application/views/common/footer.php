@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-         <p class="text-center">Copyright &copy; 2016 Fresco, Valleverde Co.Ltd . All rights reserved. <Br /> Designed & Developed by Technoholic Co.Ltd. </p>
+         <p class="text-center"><?=$this->lang->line('company');?></p>
         <div class="clear"></div>
     </div>
     

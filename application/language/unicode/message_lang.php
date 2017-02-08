@@ -18,8 +18,6 @@ $lang['VegeBox'] = "U/Vege Box";
 
 
 
-
-
 //Contact View
 $lang['contactUs'] = "U/Contact Us";
 $lang['address'] = "U/ADDRESS";
@@ -198,3 +196,8 @@ $lang['password'] = "U/Password";
 $lang['forgetPwd'] = "U/Forgot your password?";
 $lang['Name'] = "U/Name";
 $lang['Re-EnterPassword'] = "U/Re-Enter Password";
+
+
+//Footer
+$lang['company'] = "Copyright &copy; 2016 Fresco, Valleverde Co.Ltd . All rights reserved. <Br /> Designed & Developed by Technoholic Co.Ltd. ";
+$lang['GetMobileApp'] = "Get Mobile App ";
