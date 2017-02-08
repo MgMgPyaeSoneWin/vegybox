@@ -52,3 +52,8 @@ AdditionalItem_Entry
          - price -> int(8)
          - parent -> int(2)
          - language_type -> enum('english', 'unicode', 'zawgyi')
+
+
+         Main.php -> index and public function faq()
+
+		
