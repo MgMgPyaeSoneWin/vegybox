@@ -69,9 +69,9 @@
           <div class="hero">        
             <hgroup>
                 <!--<h1>We are amazing</h1>  -->      
-                <h2>Sit back and relax while we do all the work. </h2> <h3 class="visible-md visible-lg"> We have started a Vegy box service to easily get to you the best of our products right infront of your door step.  </h3>
+                <h2><?=$this->lang->line('sitAndRelax');?></h2> <h3 class="visible-md visible-lg"> haveStartedVegyBoxService<?=$this->lang->line('haveStartedVegyBoxService');?></h3>
             </hgroup>
-            <a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" role="button">Order Vegy Box Now</a>
+            <a href="<?php echo base_url() ?>order" class="btn btn-hero btn-lg" role="button"><?=$this->lang->line('OrderVegyBoxNow');?></a>
           </div>
         </div>
       </div>       
@@ -80,11 +80,11 @@
 
 <div class="row" style="margin:0 auto; padding:15px;">
 	<hr style="margin:15px 0px;">
-	<h4 class="heading-green text-center">What is Vegy Box Service ?</h4>
+	<h4 class="heading-green text-center"><?=$this->lang->line('vegyBoxExplain');?></h4>
 	<hr style="margin:15px 0px;">
     
     <p class="text-center" style="font-size:14px;">
-    	Our “Vegy Box” service deliver a broad range of assorted seasonal vegetables, lettuces and herbs that we grow in our farms in Shan State to your door step. <br> It is a standard size for a family of 3-5 person. The box price is <b>23,000ks</b> and the payment is in cash when receiving the box. <br> The box will be delivered according with the area you live, on <b>Tue – Thu</b> from 12.00 am to 4.30 pm.
+    	<?=$this->lang->line('servieDetail');?>
 	</p>
 	
     
@@ -106,7 +106,7 @@
                                 <hr style="margin:5px 0px;">
                                 <p><?php echo $b->description; ?></p>
                             </div>
-                            <div class="box-footer"><a href="<?php echo base_url() ?>order/">ORDER NOW ! </a></div>
+                            <div class="box-footer"><a href="<?php echo base_url() ?>order/"><?=$this->lang->line('OrderNow');?></a></div>
                        </div>
                     </div>
         <?php 
@@ -123,7 +123,7 @@
     </div>
     <div class="row" style="margin:0 auto;">
         <div class="notice notice-success">
-            <strong>Notice : </strong> Click on the link beside to download the user manual: <a href="<?php echo base_url() ?>assets/FrescoVegyBoxUserManual.pdf" download="FrescoVegyBoxUserManual.pdf" target="_blank" >English</a> | <a href="<?php echo base_url() ?>assets/FrescoUserManualZawgyi.pdf" download="FrescoUserManualZawgyi.pdf" target="_blank" >Myanmar</a>.
+            <strong><?=$this->lang->line('Notice');?></strong><?=$this->lang->line('downloadManual');?><a href="<?php echo base_url() ?>assets/FrescoVegyBoxUserManual.pdf" download="FrescoVegyBoxUserManual.pdf" target="_blank" ><?=$this->lang->line('English');?></a> | <a href="<?php echo base_url() ?>assets/FrescoUserManualZawgyi.pdf" download="FrescoUserManualZawgyi.pdf" target="_blank" ><?=$this->lang->line('Myanmar');?></a>.
         </div>
     </div>
 </div>

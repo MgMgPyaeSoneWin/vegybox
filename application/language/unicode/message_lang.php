@@ -7,7 +7,18 @@
  */
 
 //Common Header
-$lang['home'] = "UHome";
+$lang['home'] = "U/Home";
+$lang['LogOut'] = "U/Log Out";
+$lang['Profile'] = "U/Profile";
+$lang['FAQ'] = "U/FAQ";
+$lang['MyOrders'] = "U/My Orders";
+$lang['Order'] = "U/Order";
+$lang['Login'] = "U/Login";
+$lang['VegeBox'] = "U/Vege Box";
+
+
+
+
 
 //Contact View
 $lang['contactUs'] = "U/Contact Us";
@@ -147,12 +158,6 @@ $lang['OldPassword'] = "Old Password";
 $lang['NewPassword'] = "New Password";
 $lang['ConfirmPassword'] = "Confirm Password";
 $lang['Change'] = "Change";
-$lang[''] = "";
-$lang[''] = "";
-$lang[''] = "";
-$lang[''] = "";
-$lang[''] = "";
-$lang[''] = "";
 
 
 
@@ -162,6 +167,24 @@ $lang['download_app'] = "This is from unicode";
 $lang['app_mobile'] = "(U)Our app is now mobile !";
 $lang['download'] = "အကြံပြုချက်";
 $lang['download_now'] = "U/Download Now";
+$lang['sitAndRelax'] = "Sit back and relax while we do all the work.";
+//Home View
+$lang['download_app'] = "U/Download our free mobile app to place your order from anywhere at anytime.";
+$lang['app_mobile'] = "U/Our app is now mobile !";
+$lang['download'] = "U/suggestion";
+$lang['download_now'] = "U/Download Now";
+$lang['tired_of_wasting_time_in_traffic'] = "U/Tired of wasting time in traffic?";
+$lang['Order_Vegy_Box_Now'] = "U/Order Vegy Box Now";
+$lang['are_you_too_busy'] = "U/Are you too busy to keep your new year’s resolution of eating healthier?";
+$lang['haveStartedVegyBoxService'] = "U/We have started a Vegy box service to easily get to you the best of our products right infront of your door step.";
+$lang['Notice'] = "U/Notice : ";
+$lang['downloadManual'] = "U/Click on the link beside to download the user manual: ";
+$lang['OrderNow'] = "U/ORDER NOW ! ";
+$lang['servieDetail'] = "U/Our “Vegy Box” service deliver a broad range of assorted seasonal vegetables, lettuces and herbs that we grow in our farms in Shan State to your door step. <br> It is a standard size for a family of 3-5 person. The box price is <b>23,000ks</b> and the payment is in cash when receiving the box. <br> The box will be delivered according with the area you live, on <b>Tue – Thu</b> from 12.00 am to 4.30 pm.";
+$lang['vegyBoxExplain'] = "U/What is Vegy Box Service ?";
+$lang['OrderVegyBoxNow'] = "U/Order Vegy Box Now";
+
+
 
 
 //Login View

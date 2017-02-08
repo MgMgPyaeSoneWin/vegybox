@@ -7,7 +7,14 @@
  */
 
 //Common Header
-$lang['home'] = "ZHome";
+$lang['home'] = "Z/Home";
+$lang['LogOut'] = "Z/Log Out";
+$lang['Profile'] = "Z/Profile";
+$lang['FAQ'] = "Z/FAQ";
+$lang['MyOrders'] = "Z/My Orders";
+$lang['Order'] = "Z/Order";
+$lang['Login'] = "Z/Login";
+$lang['VegeBox'] = "Z/Vege Box";
 
 //Contact View
 $lang['contacts'] = "Z/Contact Zs";
@@ -143,6 +150,31 @@ $lang['download_app'] = "This is from Zawgyi";
 $lang['app_mobile'] = "(Z)OZr app is now mobile !";
 $lang['download'] = "အႀကံျပဳခ်က္";
 $lang['download_now'] = "Z/Download Now";
+
+//Home View
+$lang['download_app'] = "Download our free mobile app to place your order from anywhere at anytime.";
+$lang['app_mobile'] = "Our app is now mobile !";
+$lang['download'] = "suggestion";
+$lang['download_now'] = "Download Now";
+$lang['tired_of_wasting_time_in_traffic'] = "Tired of wasting time in traffic?";
+$lang['Order_Vegy_Box_Now'] = "Order Vegy Box Now";
+$lang['are_you_too_busy'] = "Are you too busy to keep your new year’s resolution of eating healthier?";
+$lang['Sit_back_and_relax'] = "Sit back and relax while we do all the work.";
+$lang['download_app'] = "Z/Download our free mobile app to place your order from anywhere at anytime.";
+$lang['app_mobile'] = "Z/Our app is now mobile !";
+$lang['download'] = "Z/suggestion";
+$lang['download_now'] = "Z/Download Now";
+$lang['tired_of_wasting_time_in_traffic'] = "Z/Tired of wasting time in traffic?";
+$lang['Order_Vegy_Box_Now'] = "Z/Order Vegy Box Now";
+$lang['are_you_too_busy'] = "Z/Are you too busy to keep your new year’s resolution of eating healthier?";
+$lang['haveStartedVegyBoxService'] = "Z/We have started a Vegy box service to easily get to you the best of our products right infront of your door step.";
+$lang['Notice'] = "Z/Notice : ";
+$lang['downloadManual'] = "Z/Click on the link beside to download the user manual: ";
+$lang['OrderNow'] = "Z/ORDER NOW ! ";
+$lang['servieDetail'] = "Z/Our “Vegy Box” service deliver a broad range of assorted seasonal vegetables, lettuces and herbs that we grow in our farms in Shan State to your door step. <br> It is a standard size for a family of 3-5 person. The box price is <b>23,000ks</b> and the payment is in cash when receiving the box. <br> The box will be delivered according with the area you live, on <b>Tue – Thu</b> from 12.00 am to 4.30 pm.";
+$lang['vegyBoxExplain'] = "Z/What is Vegy Box Service ?";
+$lang['OrderVegyBoxNow'] = "Z/Order Vegy Box Now";
+
 
 
 //Login View

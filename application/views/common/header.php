@@ -68,30 +68,30 @@
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Vege Box</a>        </div>
+        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template"><?=$this->lang->line('VegeBox');?></a></div>
         
         <nav id="menu">
         
         	<ul id="menu-nav">
             	<li id="nav_home"><a href="<?php echo base_url() ?>main"><?php echo $this->lang->line('home'); ?></a></li>
                  <?php if(!$this->session->userdata('userdata')): ?>
-					<li id="nav_login"><a href="<?php echo base_url() ?>user">Login</a></li>
+					<li id="nav_login"><a href="<?php echo base_url() ?>user"><?=$this->lang->line('Login');?></a></li>
                  <?php endif; ?>
-                <li id="nav_order"><a href="<?php echo base_url() ?>order">Order</a></li>
+                <li id="nav_order"><a href="<?php echo base_url() ?>order"><?=$this->lang->line('Order');?></a></li>
 
                 <?php $sess =  $this->session->userdata('userdata');
                     if($sess):
                         if($sess['status'] !== 'New'): ?>
-					        <li id="nav_myorders"><a href="<?php echo base_url() ?>order/my_order">My Orders</a></li>
+					        <li id="nav_myorders"><a href="<?php echo base_url() ?>order/my_order"><?=$this->lang->line('MyOrders');?></a></li>
                  <?php endif; 
                   endif; 
                  ?>
                  
-                <li id="nav_faq" onClick="menu_click('main/faq')"><a>FAQ</a></li>
+                <li id="nav_faq" onClick="menu_click('main/faq')"><a><?=$this->lang->line('FAQ');?></a></li>
                 
                 <?php if($this->session->userdata('userdata')): ?>
-	                <li id="nav_profile"><a href="<?php echo base_url() ?>user/profile">Profile</a></li>
-                    <li id="nav_about"><a href="<?php echo base_url() ?>user/log_out">Log Out</a></li>
+	                <li id="nav_profile"><a href="<?php echo base_url() ?>user/profile"><?=$this->lang->line('Profile');?></a></li>
+                    <li id="nav_about"><a href="<?php echo base_url() ?>user/log_out"><?=$this->lang->line('LogOut');?></a></li>
                  <?php endif; ?>
 
 				<!--Jan 26: 6:02 AM
