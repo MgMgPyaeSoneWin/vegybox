@@ -257,7 +257,7 @@ $lang['company'] = "Copyright &copy; 2016 Fresco, Valleverde Co.Ltd . All rights
 $lang['GetMobileApp'] = "Get Mobile App ";
 
 //Bugs Fixed
-$lang['choose'] = 'Please choose one of the box you want to order !';
-$lang['order'] = "You can only order up to 3 boxes a week !";
-$lang['testOrder'] = "You should order at least 1 boxes a week !";
-$lang['chooseOne'] = "Please choose 1 more box.";
+$lang['choose'] = 'U/Please choose one of the box you want to order !';
+$lang['order'] = "U/You can only order up to 3 boxes a week !";
+$lang['testOrder'] = "U/You should order at least 1 boxes a week !";
+$lang['chooseOne'] = "U/Please choose 1 more box.";

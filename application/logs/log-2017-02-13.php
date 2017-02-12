@@ -338,3 +338,27 @@ LEFT OUTER JOIN `fr_delivery_day` d ON d.`day_id` = td.`day_id`
 WHERE a.user_id = '1'  AND d.`delivery` = 'YES' GROUP BY address_id
 ERROR - 2017-02-13 05:11:17 --> Could not find the language line "welcome_message"
 ERROR - 2017-02-13 05:11:17 --> Could not find the language line "Address"
+ERROR - 2017-02-13 05:22:36 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-13 05:22:36 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-13 05:22:37 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
+ERROR - 2017-02-13 05:22:37 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-13 05:22:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:22:42 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:22:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:22:42 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:22:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:22:47 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:22:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:22:47 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:23:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:23:44 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:23:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:23:44 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:23:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:23:47 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:23:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:23:47 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:26:12 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:26:12 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79
+ERROR - 2017-02-13 05:26:12 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1 - Invalid query: SELECT SQL_CALC_FOUND_ROWS * FROM fr_faq LIMIT0,10
+ERROR - 2017-02-13 05:26:12 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/System_model.php 79

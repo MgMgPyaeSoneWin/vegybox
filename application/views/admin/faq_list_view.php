@@ -3,13 +3,9 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header"> FAQs    
+            <h1 class="page-header"> FAQs
             <a href="<?php echo base_url() ?>admin/system/faq_entry" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add New</a>
             </h1>
-            <a href="<?php echo base_url() ?>admin/system/faq_list_lang/all" class="pull-right">All&nbsp;</a>
-            <a href="<?php echo base_url() ?>admin/system/faq_list_lang/english" class="pull-right">English&nbsp;</a>
-            <a href="<?php echo base_url() ?>admin/system/faq_list_lang/zawgyi" class="pull-right">Zawgyi&nbsp;</a>
-            <a href="<?php echo base_url() ?>admin/system/faq_list_lang/unicode" class="pull-right">Unicode&nbsp;</a>
         </div>
         <hr>
     </div>
@@ -48,7 +44,7 @@
                       </div>
                       <div class="panel-footer" style="min-height:34px;padding:0px;">
                          <a onclick="delete_faq(<?= $row->faq_id?>)"  class="btn btn-link pull-right"><i class="glyphicon glyphicon-remove"></i> Delete</a>
-                         <a href="<?php echo base_url() ?>admin/system/faq_list_lang//<?= $row->faq_id?>"  class="btn btn-link pull-right"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                         <a href="<?php echo base_url() ?>admin/system/faq_entry/<?= $row->faq_id?>"  class="btn btn-link pull-right"><i class="glyphicon glyphicon-edit"></i> Edit</a>
                       </div>
                     </div>
                 </div>

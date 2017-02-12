@@ -259,3 +259,9 @@ $lang['OldPassword'] = "Z/Old Password";
 $lang['NewPassword'] = "Z/New Password";
 $lang['ConfirmPassword'] = "Z/Confirm Password";
 $lang['Change'] = "Z/Change";
+
+//Bugs Fixed
+$lang['choose'] = 'Z/Please choose one of the box you want to order !';
+$lang['order'] = "Z/You can only order up to 3 boxes a week !";
+$lang['testOrder'] = "Z/You should order at least 1 boxes a week !";
+$lang['chooseOne'] = "Z/Please choose 1 more box.";
