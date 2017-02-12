@@ -28,7 +28,7 @@ class Reminder extends CI_Controller
 			foreach($data as $row)
 			{			
                 error_log("Reminder List : ".$row->name.' | '.$row->email, 0);
-				$body = "<b>Dear ".$row->name.",</b> <br> <p>Your subscription will be ended in coming delivery. Please kindly visit our website to start a new subscription if you still want to enjoy our service.</p>";
+				$body = "<b>Dear ".$row->name.",</b> <br> <p>".$this->lang->line('remainder')."</p>";
 				
 				$sample = array("{logo}","{body}", "{company_name}", "{address}", "{website}", "{email}", "{facebook}", "{phone}");
 				

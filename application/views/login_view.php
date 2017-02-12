@@ -149,7 +149,7 @@ $(document).ready(function(){
 			
 			$("#btn_login")
 					.removeAttr("disabled")
-					.html('Sign in');
+					.html('<?=$this->lang->line('signIn');?>');
 			
 			
 		});
@@ -213,7 +213,7 @@ $(document).ready(function(){
 			return;
 		}
 
-		bootbox.confirm("Are you sure you want to register with this email, "+$("#txt_email").val()+" ?", function(result) {
+		bootbox.confirm("<?=$this->lang->line('sureEmail');?>"+$("#txt_email").val()+" ?", function(result) {
 			if(result == true)
 			{	
 				//disable the button to prevent multiple clicks

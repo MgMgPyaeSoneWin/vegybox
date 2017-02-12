@@ -180,27 +180,27 @@ class Main extends CI_Controller
 		if($type == 'max_box')
 		{
 			$data['title'] = '<i class="glyphicon glyphicon-warning-sign"></i> Sorry, Orders closed!';
-			$data['msg'] = 'The maximum box limit for this delivery date has exceeded. Please try again with the different delivery date. Thank you! <br> <center><a href="'.base_url().'order" class="btn btn-success">Go back to order page</a></center>';
+			$data['msg'] = $this->lang->line('maximumNo').'<br> <center><a href="'.base_url().'order" class="btn btn-success">'.$this->lang->line('goBackToOrderPage').'</a></center>';
 		}
 		else if($type == 404)
 		{
 			$data['title'] = '<i class="glyphicon glyphicon-remove-sign"></i> Page not found !';
-			$data['msg'] = 'Sorry, the page you are trying to access is not available. Click <a href="'.base_url().'main" class="btn btn-link" style="color: #337ab7; text-decoration: underline;">here</a> to go back to home page ';
+			$data['msg'] = $this->lang->line('notAvailabeToAcess').'<a href="'.base_url().'main" class="btn btn-link" style="color: #337ab7; text-decoration: underline;">'.$this->lang->line('here').'</a>'.$this->lang->line('goBackHome');
 		}
 		else if($type == 500)
 		{
 			$data['title'] = '<i class="glyphicon glyphicon-wrench"></i> Something went wrong !';
-			$data['msg'] = 'Sorry, there is some internal server occur when processing your request. Please refresh the page and try again. Sorry for your inconvinence. ';
+			$data['msg'] = $this->lang->line('internalServerError');
 		}
 		else if($type == 'deny')
 		{
-			$data['title'] = '<i class="glyphicon glyphicon-remove-sign"></i> Access Denied!';
-			$data['msg'] = 'You are not allowed to access this page ! ';
+			$data['title'] = '<i class="glyphicon glyphicon-remove-sign"></i>'.$this->lang->line('AccessDenied');
+			$data['msg'] = $this->lang->line('notAllowed');
 		}
 		else if($type == 'edit')
 		{
-			$data['title'] = '<i class="glyphicon glyphicon-remove-sign"></i> Invalid Request!';
-			$data['msg'] = 'Sorry, you can only edit your order not later than 3 days before the delivery is to be made. Click <a href="'.base_url().'main/faq" class="btn btn-link" style="color: #337ab7; text-decoration: underline;">here</a> to view some FAQ for your reference. ';
+			$data['title'] = '<i class="glyphicon glyphicon-remove-sign"></i>'.$this->lang->line('InvalidRequest');
+			$data['msg'] = $this->lang->line('editOrderOnly').'<a href="'.base_url().'main/faq" class="btn btn-link" style="color: #337ab7; text-decoration: underline;">'.$this->lang->line('here').'</a>'.$this->lang->line('viewFAQ');
 		}
 		$this->load->view('error_view', $data);
 	}
@@ -237,9 +237,9 @@ $message='testing';
 		$this->load->library('email');		
 		$this->load->model("system_model");
 				
-		$subject = 'Password Reset';
+		$subject = $this->lang->line('passwordReset');
 		
-		$body = '<p>Please use the following code to login your fresco account. </p> <br> Here is the code : <b> a$1tQ90 </b><br> <center><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;color: #fff;font-family: Cabin,Avenir,sans-serif;background-color: #4c5b6b;" href="http://test.com">Activate Now</a></center>';
+		$body = '<p>'.$this->lang->line('useCode').'</p> <br>'.$this->lang->line('codeIs').'<b> a$1tQ90 </b><br> <center><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;color: #fff;font-family: Cabin,Avenir,sans-serif;background-color: #4c5b6b;" href="http://test.com">Activate Now</a></center>';
 		
 		$setting = $this->system_model->profile_setting();
 		$template = $this->system_model->get_setting()->template;

@@ -4,7 +4,7 @@ FAQ_Entry
 - From System Controller
     Function is Defined as:
         - Controller -> function insert_faq_lang() @ line Number 179 / No Parameters requied.
-        - Model -> System_model -> One more value is added to array of $box_data @ line Number / 141
+        - Model -> Admin/System_model -> One more value is added to array of $box_data @ line Number / 112
         - View -> is faq_entry_view_myanmar.php
 
 

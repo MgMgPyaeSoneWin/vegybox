@@ -219,7 +219,7 @@ class Order extends CI_Controller
     		        break;
     		}
             
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>The maximum box limit for "'.strtoupper($delivery_day).'" has exceeded. Please try again with the different delivery date. Thank you!</b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('maxBoxLimit').'"'.strtoupper($delivery_day).'"'.$this->lang->line('hasExceeded').'</b></div> '));
 			return;
 		}
 		
@@ -362,7 +362,7 @@ class Order extends CI_Controller
 			$result = $this->order_model->remove_address($address_id);
 			if(!$result)
 			{
-				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.  </b></div> '));
+				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.$this->lang->line('errorProcessing').'</b></div> '));
 				return;
 			}
 			else
@@ -373,7 +373,7 @@ class Order extends CI_Controller
 		}
 		else
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.  </b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.$this->lang->line('errorProcessing').'</b></div> '));
 			return;
 		}
 	}
@@ -581,12 +581,12 @@ class Order extends CI_Controller
 		$result = $this->order_model-> update_order_status($userdata['id'], $order_id, $status);
 		if(!$result)
 		{
-			echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i> On Hold Subscription Failed !', 'msg' => 'Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.'));
+			echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i>'.$this->lang->line('failedSub'), 'msg' => $this->lang->line('errorProcessing')));
 			return;
 		}
 		else
 		{
-			echo json_encode(array('status' => 'success', 'title' => '<i class="glyphicon glyphicon-ok-sign"></i> On Hold Subscription Successful! ', 'msg' => 'Your order subscription has been successfully on hold!'));
+			echo json_encode(array('status' => 'success', 'title' => '<i class="glyphicon glyphicon-ok-sign"></i>'.$this->lang->line('successSub'), 'msg' =>$this->lang->line('orderHold')));
 			return;
 		}
 	}
@@ -606,7 +606,7 @@ class Order extends CI_Controller
 		
 			if( $limit == false)
 			{
-				echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i> Resuming Subscription Failed !', 'msg' => 'The maximum box limit for "'.strtoupper($delivery_day).'" has exceeded. Please try again with the different delivery date. Thank you! '));
+				echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i>'.$this->lang->line('failResume'), 'msg' => $this->lang->line('maximunLimit').' '.strtoupper($delivery_day).' '.$this->lang->line('different')));
 				return;
 			}
 			else
@@ -614,7 +614,7 @@ class Order extends CI_Controller
 				$result = $this->order_model-> update_order_status($userdata['id'], $order_id, $status);
 				if(!$result)
 				{
-					echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i> Resuming Subscription Failed !', 'msg' => 'Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.'));
+					echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i>'.$this->lang->line('failResume'), 'msg' => $this->lang->line('errorProcessing')));
 					return;
 				}
 				else
@@ -643,14 +643,14 @@ class Order extends CI_Controller
 							break;
 					}
                     
-					echo json_encode(array('status' => 'success', 'title' => '<i class="glyphicon glyphicon-ok-sign"></i> Resuming Subscription Successful ! ', 'msg' => 'Your order subscription has been successfully resumed! You will get your order start from coming "'.strtoupper($delivery_day).'".'));
+					echo json_encode(array('status' => 'success', 'title' => '<i class="glyphicon glyphicon-ok-sign"></i>'.$this->lang->line('resumingSuccessful'), 'msg' => $this->lang->line('orderSubscription').'"'.strtoupper($delivery_day).'".'));
 					return;
 				}
 			}
 		}
 		else
 		{
-			echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i> Resuming Subscription Failed !', 'msg' => 'Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.'));
+			echo json_encode(array('status' => 'error', 'title' => '<i class="glyphicon glyphicon-remove-sign"></i>'.$this->lang->line('failResume'), 'msg' => $this->lang->line('errorProcessing')));
 			return;
 		}
 		
@@ -668,7 +668,7 @@ class Order extends CI_Controller
 			$update = $this->order_model->update_order_status($userdata['id'], $order_id, $status);
 			if(!$update)
 			{
-				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience. </b></div> '));
+				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('errorProcessing').'</b></div> '));
 				return;
 			}
 			else
@@ -677,12 +677,12 @@ class Order extends CI_Controller
 				
 				if($result)
 				{
-					echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>Your order subscription has been successfully cancelled! Administrator will contact you shortly and your money will be refunded only after reviewing your reason. Thank you.</b></div> '));
+					echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>'.$this->lang->line('successfullyCancel').'</b></div> '));
 					return;
 				}
 				else
 				{
-					echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.</b></div> '));
+					echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('errorProcessing').'</b></div> '));
 					return;
 				}
 			}

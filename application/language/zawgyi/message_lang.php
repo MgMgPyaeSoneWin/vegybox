@@ -188,3 +188,64 @@ $lang['password'] = "Z/Password";
 $lang['forgetPwd'] = "Z/Forgot yoZr password?";
 $lang['Name'] = "Z/Name";
 $lang['Re-EnterPassword'] = "Z/Re-Enter Password";
+
+
+//User Controller for Login View
+$lang['checkActivated'] = "Z/Please make sure your account is activated! You can check your email to activate the account.";
+$lang['checkBanned'] = "Z/Sorry! Your account has been banned by the administrator ! ";
+$lang['checkUsernameAndPassword'] = "Z/Please make sure your username and password is correct!";
+$lang['passwordReset'] = "Z/Password Reset";
+$lang['codeToLogin'] = "Z/Please use the following code to login your fresco account. <br> Here is the code : <b>";
+$lang['sendToEmail'] = "Z/New Password has been sent to your email. Please check your Spam box if you cannot find our mail in your Inbox. ";
+$lang['errorInProcessing'] = "Z/Error in Processing ! Please try again.";
+$lang['invalidEmail'] = "Z/Invalid Email ! Are you sure you\'ve registerd with this email ? ";
+$lang['errorEncountered'] = "Z/Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience. ";
+$lang['profileDetail'] = " Z/Profile Detail successfully updated ! ";
+$lang['incorrectOldPassword'] = "Z/Incorrect Old Password ! Please try again ! ";
+$lang['changeSuccessfully'] = "Z/You\'ve successfully changed your password! Please login with your new password next time.";
+$lang['emailMandatory'] = "Z/Your email address is mandatory ! ";
+$lang['invalidEmail'] = "Z/Invalid email address! ";
+$lang['passwordMandatory'] = "Z/Password is mandatory ! ";
+$lang['emailExit'] = "Z/Registration Failed! This email already exist!";
+$lang['accActivation'] = "Z/Account Activation";
+$lang['thxUsing'] = "Z/Thank you for joining FRESCO Vegy Box Home Delivery Service! Click on the button below to activate your account. After activating your account, you may start ordering the vegy boxes.";
+$lang['activeNow'] = "Z/Activate Now";
+$lang['successfulReg'] = "Z/Registration Successful ! Please check your email and activate your account to enjoy our service. Please check your Spam box if you cannot find our mail in your Inbox.";
+$lang['regFailed'] = "Z/Registration Failed ! Please try again.";
+$lang['failActivation'] = 'Z/Activation Failed ! Please try again.';
+$lang['sureEmail'] = "Z/Are you sure you want to register with this email,";
+
+//Main Controller for Homepage
+$lang['maximumNo'] = "Z/The maximum box limit for this delivery date has exceeded. Please try again with the different delivery date. Thank you! ";
+$lang['goBackToOrderPage'] = "Z/Go back to order page";
+$lang['notAvailabeToAcess'] = "Z/Sorry, the page you are trying to access is not available. Click ";
+$lang['here'] = "Z/here";
+$lang['goBackHome'] = "Z/to go back to home page ";
+$lang['internalServerError'] = "Z/Sorry, there is some internal server occur when processing your request. Please refresh the page and try again. Sorry for your inconvinence. ";
+$lang['AccessDenied'] = "Z/Access Denied!";
+$lang['notAllowed'] = "Z/You are not allowed to access this page !";
+$lang['InvalidRequest'] = "Z/Invalid Request!";
+$lang['editOrderOnly'] = "Z/Sorry, you can only edit your order not later than 3 days before the delivery is to be made. Click ";
+$lang['viewFAQ'] = "Z/to view some FAQ for your reference.";
+$lang['passwordReset'] = "Z/Password Reset";
+$lang['useCode'] = "Z/Please use the following code to login your fresco account.";
+$lang['codeIs'] = "Z/Here is the code :";
+
+//Order Controller for OrderPage
+$lang['maxBoxLimit'] = "Z/The maximum box limit for ";
+$lang['hasExceeded'] = "Z/has exceeded. Please try again with the different delivery date. Thank you!";
+$lang['orderHold'] = "Z/Your order subscription has been successfully on hold!";
+$lang['orderSubscription'] = "Z/Your order subscription has been successfully resumed! You will get your order start from coming ";
+$lang['failedSub'] = "Z/On Hold Subscription Failed !";
+$lang['successSub'] = "Z/On Hold Subscription Successful!";
+$lang['failResume'] = "Z/Resuming Subscription Failed !";
+$lang['maximunLimit'] = "Z/The maximum box limit for ";
+$lang['different'] = "Z/has exceeded. Please try again with the different delivery date. Thank you!";
+$lang['resumingSuccessful'] = "Z/Resuming Subscription Successful ! ";
+$lang['successfullyCancel'] = "Z/Your order subscription has been successfully cancelled! Administrator will contact you shortly and your money will be refunded only after reviewing your reason. Thank you.";
+$lang['remainder'] = "Z/Your subscription will be ended in coming delivery. Please kindly visit our website to start a new subscription if you still want to enjoy our service.";
+
+
+//Footer
+$lang['company'] = "Copyright &copy; 2016 Fresco, Valleverde Co.Ltd . All rights reserved. <Br /> Designed & Developed by Technoholic Co.Ltd. ";
+$lang['GetMobileApp'] = "Get Mobile App ";
