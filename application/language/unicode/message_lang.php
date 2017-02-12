@@ -197,6 +197,30 @@ $lang['forgetPwd'] = "U/Forgot your password?";
 $lang['Name'] = "U/Name";
 $lang['Re-EnterPassword'] = "U/Re-Enter Password";
 
+//User Controller for Login View
+$lang['checkActivated'] = "U/Please make sure your account is activated! You can check your email to activate the account.";
+$lang['checkBanned'] = "U/Sorry! Your account has been banned by the administrator ! ";
+$lang['checkUsernameAndPassword'] = "U/Please make sure your username and password is correct!";
+$lang['passwordReset'] = "U/Password Reset";
+$lang['codeToLogin'] = "U/Please use the following code to login your fresco account. <br> Here is the code : <b>";
+$lang['sendToEmail'] = "U/New Password has been sent to your email. Please check your Spam box if you cannot find our mail in your Inbox. ";
+$lang['errorInProcessing'] = "U/Error in Processing ! Please try again.";
+$lang['invalidEmail'] = "U/Invalid Email ! Are you sure you\'ve registerd with this email ? ";
+$lang['errorEncountered'] = "U/Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience. ";
+$lang['profileDetail'] = " U/Profile Detail successfully updated ! ";
+$lang['incorrectOldPassword'] = "U/Incorrect Old Password ! Please try again ! ";
+$lang['changeSuccessfully'] = "U/You\'ve successfully changed your password! Please login with your new password next time.";
+$lang['emailMandatory'] = "U/Your email address is mandatory ! ";
+$lang['invalidEmail'] = "U/Invalid email address! ";
+$lang['passwordMandatory'] = "U/Password is mandatory ! ";
+$lang['emailExit'] = "U/Registration Failed! This email already exist!";
+$lang['accActivation'] = "U/Account Activation";
+$lang['thxUsing'] = "U/Thank you for joining FRESCO Vegy Box Home Delivery Service! Click on the button below to activate your account. After activating your account, you may start ordering the vegy boxes.";
+$lang['activeNow'] = "U/Activate Now";
+$lang['successfulReg'] = "U/Registration Successful ! Please check your email and activate your account to enjoy our service. Please check your Spam box if you cannot find our mail in your Inbox.";
+$lang['regFailed'] = "U/Registration Failed ! Please try again.";
+$lang['failActivation'] = 'Activation Failed ! Please try again.';
+
 
 //Footer
 $lang['company'] = "Copyright &copy; 2016 Fresco, Valleverde Co.Ltd . All rights reserved. <Br /> Designed & Developed by Technoholic Co.Ltd. ";

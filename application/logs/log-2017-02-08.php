@@ -312,3 +312,111 @@ ERROR - 2017-02-08 09:22:16 --> Query error: Table 'vegyboxadmin.fr_delivery_day
 ERROR - 2017-02-08 09:22:16 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
 ERROR - 2017-02-08 09:22:17 --> Query error: Table 'vegyboxadmin.fr_delivery_day' doesn't exist - Invalid query: SELECT * FROM `fr_delivery_day`
 ERROR - 2017-02-08 09:22:17 --> Severity: Error --> Call to a member function num_rows() on boolean /Applications/MAMP/htdocs/vegybox/application/models/admin/Delivery_model.php 52
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:49 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:49 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:49 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_connect(): No such file or directory /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 136
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 191
+ERROR - 2017-02-08 14:26:55 --> Unable to select database: vegyboxAdmin
+ERROR - 2017-02-08 14:26:55 --> Unable to connect to the database
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_query() expects parameter 2 to be resource, boolean given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_driver.php 245
+ERROR - 2017-02-08 14:26:55 --> Severity: Warning --> mysql_num_rows() expects parameter 1 to be resource, null given /Applications/MAMP/htdocs/vegybox/system/database/drivers/mysql/mysql_result.php 63

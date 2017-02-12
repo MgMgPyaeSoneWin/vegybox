@@ -36,7 +36,7 @@ class User extends CI_Controller
 		
 				if($activation == false)
 				{
-					echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Please make sure your account is activated! You can check your email to activate the account.</b></div> '));
+					echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('checkActivated').'</b></div> '));
 				return;
 				}
 				else
@@ -44,7 +44,7 @@ class User extends CI_Controller
                     // User is actived and checking status
 					if($check->status == 'Banned')
 					{
-						echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Sorry! Your account has been banned by the administrator ! </b></div> '));
+						echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('checkBanned').'</b></div> '));
 						return;
 					}
 					else
@@ -65,13 +65,13 @@ class User extends CI_Controller
 			}
 			else
 			{	
-				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>Please make sure your username and password is correct! </b></div> '));
+				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('checkUsernameAndPassword').'</b></div> '));
 				return;
 			}
 		}
 		else
 		{ 
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Please make sure your username and password is correct!</b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> '.$this->lang->line('checkUsernameAndPassword').'b></div> '));
 			return;
 		}
 	}
@@ -104,8 +104,8 @@ class User extends CI_Controller
 			$this->load->library('email');	
 			$this->load->model("system_model");
 						
-			$subject = 'Password Reset';			
-			$body = "Please use the following code to login your fresco account. <br> Here is the code : <b>".$new_password." </b>";
+			$subject = $this->lang->line('passwordReset');		
+			$body = $this->lang->line('codeToLogin').$new_password." </b>";
 			
 			$setting = $this->system_model->profile_setting();
 			$template = $this->system_model->get_setting()->template;
@@ -123,12 +123,12 @@ class User extends CI_Controller
 
 			if($mail == true)
 			{
-				echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>New Password has been sent to your email. Please check your Spam box if you cannot find our mail in your Inbox. </b></div> '));
+				echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>'.$this->lang->line('sendToEmail').'</b></div> '));
 				return;
 			}
 			else
 			{
-				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Error in Processing ! Please try again. </b></div> '));
+				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('errorInProcessing').'</b></div> '));
 				return;
 			}				
 			
@@ -136,7 +136,7 @@ class User extends CI_Controller
 		}
 		else
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Invalid Email ! Are you sure you\'ve registerd with this email ? </b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('invalidEmail').'</b></div> '));
 			return;
 		}
 	}
@@ -178,7 +178,7 @@ class User extends CI_Controller
 		}
 		else
 		{
-			$this->session->set_flashdata('msg', '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.  </b></div> ');
+			$this->session->set_flashdata('msg', '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.$this->lang->line('errorEncountered').'</b></div> ');
 		}	
 		
 		redirect('user/profile');
@@ -203,11 +203,11 @@ class User extends CI_Controller
 			   );
 
 			$this->session->set_userdata('userdata',$newdata);	
-			$this->session->set_flashdata('msg', '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-ok"></i> Profile Detail successfully updated ! </b></div> ');
+			$this->session->set_flashdata('msg', '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-ok"></i>'.$this->lang->line('profileDetail').'</b></div> ');
 		}
 		else
 		{
-			$this->session->set_flashdata('msg', '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.  </b></div> ');
+			$this->session->set_flashdata('msg', '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.$this->lang->line('errorEncountered').'</b></div> ');
 		}	
 		
 		redirect('user/profile');
@@ -227,7 +227,7 @@ class User extends CI_Controller
 		
 		if($this->form_validation->run() == FALSE)
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Incorrect Old Password ! Please try again ! </b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('incorrectOldPassword').'</b></div> '));
 				return;
 		}
 		else
@@ -238,12 +238,12 @@ class User extends CI_Controller
 			$result = $this->user_model->update_new_password($userdata['id'], MD5(MD5($newpassword)));	
 			if($result)
 			{
-				echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>You\'ve successfully changed your password! Please login with your new password next time.</b></div> '));
+				echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>'.$this->lang->line('changeSuccessfully').'</b></div> '));
 				return;
 			}
 			else
 			{
-				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>Sorry, there is an error encountered when processing your request. Please refresh the page and try again. Sorry for your inconvenience.</b></div> '));
+				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('errorEncountered').'</b></div> '));
 				return;
 			}					
 		}
@@ -261,7 +261,7 @@ class User extends CI_Controller
 		}
 		else
 		{
-			$this->form_validation->set_message('check_old_password', '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Incorrect Old Password ! Please try again ! </b></div>');
+			$this->form_validation->set_message('check_old_password', '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('incorrectOldPassword').'</b></div>');
 			return FALSE;
 		}	
 	} 
@@ -285,20 +285,20 @@ class User extends CI_Controller
 		
 		if($data['email'] == '')
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Your email address is mandatory ! </b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('emailMandatory').'</b></div> '));
 			return;
 		}
 		
 		$this->load->helper('email');
 		if(valid_email($data['email']) == false)
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Invalid email address! </b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('invalidEmail').'</b></div> '));
 			return;
 		}
 		
 		if($data['password'] == '')
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Password is mandatory ! </b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('passwordMandatory').'</b></div> '));
 			return;
 		}
 		
@@ -307,7 +307,7 @@ class User extends CI_Controller
 		
 		if( ! $check)
 		{
-			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Registration Failed! This email already exist!</b></div> '));
+			echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.$this->lang->line('emailExit').'</b></div> '));
 			return;
 		}
 		else
@@ -318,9 +318,9 @@ class User extends CI_Controller
 			$this->load->library('email');	
 			$this->load->model("system_model");			
 						
-			$subject = 'Account Activation';
+			$subject = $this->lang->line('accActivation');
 			
-			$body = 'Thank you for joining FRESCO Vegy Box Home Delivery Service! Click on the button below to activate your account. After activating your account, you may start ordering the vegy boxes.<br> <center><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;color: #fff;font-family: Cabin,Avenir,sans-serif;background-color: #4c5b6b;" href="'.base_url().'user/activate_user/'.$data['activation_code'].'" target="_blank">Activate Now</a></center>';
+			$body = $this->lang->line('thxUsing').'<br> <center><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;color: #fff;font-family: Cabin,Avenir,sans-serif;background-color: #4c5b6b;" href="'.base_url().'user/activate_user/'.$data['activation_code'].'" target="_blank">'.$this->lang->line('activeNow').'</a></center>';
 			
 			$setting = $this->system_model->profile_setting();
 			$template = $this->system_model->get_setting()->template;
@@ -342,12 +342,12 @@ class User extends CI_Controller
 			
 				if($result)
 				{
-					echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>Registration Successful ! Please check your email and activate your account to enjoy our service. Please check your Spam box if you cannot find our mail in your Inbox.</b></div> '));
+					echo json_encode(array('status' => 'success', 'msg' => '<div class="alert alert-block alert-success"><button type="button" class="close" data-dismiss="alert"><i class="glyphicon glyphicon-remove"></i></button> <i class="glyphicon glyphicon-ok"></i> <b>'.$this->lang->line('successfulReg').'</b></div> '));
 					return;
 				}
 				else
 				{
-					echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Registration Failed ! Please try again. </b></div> '));
+					echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('regFailed').'</b></div> '));
 					return;
 				}
 				
@@ -355,7 +355,7 @@ class User extends CI_Controller
 			}
 			else
 			{
-				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i> Registration Failed ! Please try again. </b></div> '));
+				echo json_encode(array('status' => 'error', 'msg' => '<div class="alert alert-block alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-remove"></i>'.$this->lang->line('regFailed').'</b></div> '));
 				return;
 			}
 		}
@@ -373,7 +373,7 @@ class User extends CI_Controller
 		if($check)
 			redirect(base_url().'user');
 		else
-			echo '<h2>Activation Failed ! Please try again.</h2>';
+			echo '<h2>'.$this->lang->line('failActivation').'</h2>';
 	}
 }
 
