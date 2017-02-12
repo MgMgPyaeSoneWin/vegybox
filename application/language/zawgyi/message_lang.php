@@ -249,3 +249,13 @@ $lang['remainder'] = "Z/Your subscription will be ended in coming delivery. Plea
 //Footer
 $lang['company'] = "Copyright &copy; 2016 Fresco, Valleverde Co.Ltd . All rights reserved. <Br /> Designed & Developed by Technoholic Co.Ltd. ";
 $lang['GetMobileApp'] = "Get Mobile App ";
+
+//My Profile
+$lang['MY_PROFILE'] = "Z/MY PROFILE";
+$lang['ContactInfo'] = "Z/Contact Info";
+$lang['ChangePassword'] = "Z/Change Password";
+$lang['UpdateProfile'] = "Z/Update";
+$lang['OldPassword'] = "Z/Old Password";
+$lang['NewPassword'] = "Z/New Password";
+$lang['ConfirmPassword'] = "Z/Confirm Password";
+$lang['Change'] = "Z/Change";

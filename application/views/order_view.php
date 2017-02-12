@@ -1549,16 +1549,16 @@ function step1_validation()
 	
 	if (check.indexOf("1") == -1)
 	{
-		$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Please choose one of the box you want to order ! </b></div>');
+		$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.<?=$this->lang->line('choose');?>.'</b></div>');
 	}
 	else if(status == 'check' && $('#txt_box_num').val() > 3)
 	{
-		$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> You can only order up to 3 boxes a week !  </b></div>');
+		$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.<?=$this->lang->line('order');?>.'</b></div>');
 		$('#txt_box_num').closest('.form-group').addClass('has-error');
 	}
 	else if(status == 'check'  && $('#txt_box_num').val() < 1)
 	{
-		$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> You should order at least 1 boxes a week !  </b></div>');
+		$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.<?=$this->lang->line('testOrder');?>.'</b></div>');
 		$('#txt_box_num').closest('.form-group').addClass('has-error');
 	}
 	else if(status == 'check'  && $('#txt_box_num').val() == '3' && b_count == 2)
@@ -1577,7 +1577,7 @@ function step1_validation()
 		});
 		if(b3_count < 3)
 		{
-			$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i> Please choose 1 more box.  </b></div>');
+			$('#msg').html('<div class="alert alert-block alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button> <b><i class="glyphicon glyphicon-warning-sign"></i>'.<?=$this->lang->line('chooseOne');?>.'</b></div>');
 			 $("html, body").animate({
 				scrollTop: 0
 			}, 9000);  
